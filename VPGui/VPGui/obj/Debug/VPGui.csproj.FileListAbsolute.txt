@@ -1,0 +1,13 @@
+C:\Users\Stephanie\source\repos\VPGui\VPGui\obj\Debug\VPGui.csproj.AssemblyReference.cache
+C:\Users\Stephanie\source\repos\VPGui\VPGui\obj\Debug\VPGui.csproj.SuggestedBindingRedirects.cache
+C:\Users\Stephanie\source\repos\VPGui\VPGui\obj\Debug\VPGui.VPGui.resources
+C:\Users\Stephanie\source\repos\VPGui\VPGui\obj\Debug\VPGui.Properties.Resources.resources
+C:\Users\Stephanie\source\repos\VPGui\VPGui\obj\Debug\VPGui.csproj.GenerateResource.cache
+C:\Users\Stephanie\source\repos\VPGui\VPGui\obj\Debug\VPGui.csproj.CoreCompileInputs.cache
+C:\Users\Stephanie\source\repos\VPGui\VPGui\bin\Debug\VPGui.exe.config
+C:\Users\Stephanie\source\repos\VPGui\VPGui\bin\Debug\VPGui.exe
+C:\Users\Stephanie\source\repos\VPGui\VPGui\bin\Debug\VPGui.pdb
+C:\Users\Stephanie\source\repos\VPGui\VPGui\obj\Debug\VPGui.exe
+C:\Users\Stephanie\source\repos\VPGui\VPGui\obj\Debug\VPGui.pdb
+C:\Users\Stephanie\source\repos\VPGui\VPGui\obj\Debug\VPGui.NewUserForm.resources
+C:\Users\Stephanie\source\repos\VPGui\VPGui\obj\Debug\VPGui.WorkoutSelection.resources
