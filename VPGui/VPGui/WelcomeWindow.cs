@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -19,16 +21,38 @@ namespace VPGui
 
         private void UserAndPassEnterButton_Click(object sender, EventArgs e)
         {
+            //comment out this section if it doesn't compile, the file system is finicky
+            string path = "";
+            path = Path.GetFullPath("UserAndPass.txt");
+            path = path.Substring(0, path.Length - 25);
+            path = path + "UserAndPass.txt";
+            string[] files = File.ReadAllLines(path);
             string userinput = UsernameInput.Text;
             string passinput = PasswordInput.Text;
-            if(userinput == "user" && passinput == "pass")
+            int counter = 0;
+            string tempUser = "";
+            foreach (string line in files)
             {
-                //WorkoutSelection workoutform = new WorkoutSelection();
-                //IsMdiContainer = true;
-                //workoutform.Show();
-                HideWelcome();
-                ShowWorkoutSelect();
-            }
+                if (counter == 0)
+                {
+                    counter++;
+                    tempUser = line;
+
+                }
+                else
+                {
+                    counter--;
+                    if(userinput == tempUser && passinput == line)
+                    {
+                        HideWelcome();
+                        ShowWorkoutSelect();
+                    }
+                    //WorkoutSelection workoutform = new WorkoutSelection();
+                    //IsMdiContainer = true;
+                    //workoutform.Show();
+
+                }
+            }//end foreach
         }
 
         private void ExitButton_Click(object sender, EventArgs e)
