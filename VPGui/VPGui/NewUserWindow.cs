@@ -7,11 +7,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace VPGui
 {
     public partial class NewUserForm : Form
     {
+        SqlConnection connection;
+        string conString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\xialo\\OneDrive\\Documents\\1codeprojects\\3037fitnessApp\\VPGui\\VPGui\\InfoDatabase.mdf;Integrated Security=True";
+
         public NewUserForm()
         {
             InitializeComponent();
@@ -37,10 +41,26 @@ namespace VPGui
 
         private void NewUserAndPassEnter_Click(object sender, EventArgs e)
         {
-            string userinput = UserMakeInput.Text;
-            string passinput = PassMakeInput.Text;
-            PassMakeInput.Text = userinput;
-            UserMakeInput.Text = passinput;
+            // Query to insert new username and password into LoginInfo
+            string query = "INSERT INTO LoginInfo VALUES (@Username, @Password)";
+
+            // Sets up the connection to the local database and has the command query from that connection (handles closing)
+            using (connection = new SqlConnection(conString))
+            using (SqlCommand command = new SqlCommand(query, connection))
+            {
+                connection.Open();
+                // Fills in the parameters needed for the command query
+                command.Parameters.AddWithValue("@Username", UserMakeInput.Text);
+                command.Parameters.AddWithValue("@Password", PassMakeInput.Text);
+
+                // Gives comfirmation of inserting
+                command.ExecuteNonQuery();
+            }
+
+            UserMakeInput.Text = "";
+            PassMakeInput.Text = "";
+
+            MessageBox.Show("Account Successfully Created!");
         }
     }
 }
