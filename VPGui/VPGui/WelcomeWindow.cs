@@ -16,7 +16,7 @@ namespace VPGui
     public partial class VPGui : Form
     {
         SqlConnection connection;
-        string conString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\xialo\\OneDrive\\Documents\\1codeprojects\\3037fitnessApp\\VPGui\\VPGui\\InfoDatabase.mdf;Integrated Security=True";
+        string conString = $"Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename={Path.GetFullPath("InfoDatabase.mdf")};Integrated Security=True";
 
         public VPGui()
         {
@@ -75,7 +75,7 @@ namespace VPGui
                 // Puts the result of the query into variable
                 int userExists = (int)command.ExecuteScalar();
 
-                if(userExists > 0)
+                if (userExists > 0)
                 {
                     // User exists, continue to home screen
                     HideWelcome();
@@ -94,7 +94,7 @@ namespace VPGui
             System.Windows.Forms.Application.Exit();
         }
 
-        
+
         private void CreateNewUserButton_Click(object sender, EventArgs e)
         {
             NewUserForm child = new NewUserForm();
@@ -119,11 +119,12 @@ namespace VPGui
             SignInLabel.Hide();
             CreateNewUserButton.Hide();
             UserAndPassEnterButton.Hide();
+
         }
 
         private void ShowWelcome()
         {
-            ExitButton.Show(); 
+            ExitButton.Show();
             PasswordInput.Show();
             UsernameInput.Show();
             PasswordLabel.Show();
@@ -142,6 +143,7 @@ namespace VPGui
             Wkbutton1.Hide();
             Wkbutton2.Hide();
             Wkbutton3.Hide();
+            GrpButton.Hide();
         }
 
         private void ShowWorkoutSelect()
@@ -150,13 +152,9 @@ namespace VPGui
             WkLabel2.Show();
             WkLogout.Show();
             Wkbutton1.Show();
-            Wkbutton2.Show();   
+            Wkbutton2.Show();
             Wkbutton3.Show();
-
-        }
-
-        private void WkLabel1_Click(object sender, EventArgs e)
-        {
+            GrpButton.Show();
 
         }
 
@@ -164,6 +162,18 @@ namespace VPGui
         {
             HideWorkoutSelect();
             ShowWelcome();
+        }
+
+        private void Wkbutton1_Click(object sender, EventArgs e)
+        {
+            HideWorkoutSelect();
+           
+        }
+
+        private void GrpButton_Click(object sender, EventArgs e)
+        {
+            StatsForm child = new StatsForm();
+            child.Show();
         }
     }//End VPGui
 

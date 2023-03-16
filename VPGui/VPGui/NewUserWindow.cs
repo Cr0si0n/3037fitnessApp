@@ -8,13 +8,15 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.IO;
 
 namespace VPGui
 {
     public partial class NewUserForm : Form
     {
         SqlConnection connection;
-        string conString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\xialo\\OneDrive\\Documents\\1codeprojects\\3037fitnessApp\\VPGui\\VPGui\\InfoDatabase.mdf;Integrated Security=True";
+        
+        string conString = $"Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename={Path.GetFullPath("InfoDatabase.mdf")};Integrated Security=True";
 
         public NewUserForm()
         {
