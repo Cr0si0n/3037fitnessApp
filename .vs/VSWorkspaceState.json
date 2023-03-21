@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\VPGui",
+    "\\VPGui\\VPGui"
   ],
-  "SelectedNode": "\\VPGui.sln",
+  "SelectedNode": "\\VPGui\\VPGui\\Form1.cs",
   "PreviewInSolutionExplorer": false
 }

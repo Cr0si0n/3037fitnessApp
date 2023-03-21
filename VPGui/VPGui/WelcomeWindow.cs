@@ -166,8 +166,8 @@ namespace VPGui
 
         private void Wkbutton1_Click(object sender, EventArgs e)
         {
-            HideWorkoutSelect();
-           
+            bodybuilding F1 = new bodybuilding();
+            F1.Show();
         }
 
         private void GrpButton_Click(object sender, EventArgs e)
