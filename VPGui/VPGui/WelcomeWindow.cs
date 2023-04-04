@@ -16,7 +16,8 @@ namespace VPGui
     public partial class VPGui : Form
     {
         SqlConnection connection;
-        string conString = $"Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename={Path.GetFullPath("InfoDatabase.mdf")};Integrated Security=True";
+
+        string conString = $"Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename={Path.GetFullPath("InfoDatabase.mdf").Replace("bin\\Debug\\", "")};Integrated Security=True";
 
         public VPGui()
         {
@@ -59,7 +60,6 @@ namespace VPGui
                 }
             }//end foreach
             */
-
             // Query to check if username or password exists. (provide 0 if not, 1 if yes)
             string query = "SELECT COUNT(1) FROM LoginInfo WHERE Username = @Username AND Password = @Password";
 

@@ -16,7 +16,7 @@ namespace VPGui
     {
         SqlConnection connection;
         
-        string conString = $"Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename={Path.GetFullPath("InfoDatabase.mdf")};Integrated Security=True";
+        string conString = $"Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename={Path.GetFullPath("InfoDatabase.mdf").Replace("bin\\Debug\\", "")};Integrated Security=True";
 
         public NewUserForm()
         {

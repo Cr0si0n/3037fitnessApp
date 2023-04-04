@@ -172,6 +172,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="InfoDatabaseDataSet.xsc">
       <DependentUpon>InfoDatabaseDataSet.xsd</DependentUpon>
@@ -205,6 +206,8 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <DependentUpon>InfoDatabase.mdf</DependentUpon>
     </Content>
+    <None Include="Resources\Body_Builder_Icon.jpg" />
+    <None Include="Resources\Body_Builder_Icon.ico" />
     <Content Include="UserAndPass.txt" />
   </ItemGroup>
   <ItemGroup>

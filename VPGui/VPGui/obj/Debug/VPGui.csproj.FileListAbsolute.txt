@@ -77,3 +77,12 @@ C:\Users\antho\source\repos\fitnessApp\VPGui\VPGui\obj\Debug\VPGui.bodybuilding.
 C:\Users\antho\source\repos\fitnessApp\VPGui\VPGui\obj\Debug\aa-DJ\VPGui.resources.dll
 C:\Users\antho\source\repos\fitnessApp\VPGui\VPGui\obj\Debug\VPGui.Shoulders.resources
 C:\Users\antho\source\repos\fitnessApp\VPGui\VPGui\obj\Debug\VPGui.Chest.resources
+C:\Users\grace\Source\Repos\3037fitnessApp\VPGui\VPGui\bin\Debug\aa-DJ\VPGui.resources.dll
+C:\Users\grace\Source\Repos\3037fitnessApp\VPGui\VPGui\obj\Debug\VPGui.bodybuilding.resources
+C:\Users\grace\Source\Repos\3037fitnessApp\VPGui\VPGui\obj\Debug\VPGui.Shoulders.resources
+C:\Users\grace\Source\Repos\3037fitnessApp\VPGui\VPGui\obj\Debug\VPGui.Chest.resources
+C:\Users\grace\Source\Repos\3037fitnessApp\VPGui\VPGui\obj\Debug\VPGui.Arms.resources
+C:\Users\grace\Source\Repos\3037fitnessApp\VPGui\VPGui\obj\Debug\VPGui.UpperBack.resources
+C:\Users\grace\Source\Repos\3037fitnessApp\VPGui\VPGui\obj\Debug\VPGui.Legs.resources
+C:\Users\grace\Source\Repos\3037fitnessApp\VPGui\VPGui\obj\Debug\VPGui.bodybuilding.aa-DJ.resources
+C:\Users\grace\Source\Repos\3037fitnessApp\VPGui\VPGui\obj\Debug\aa-DJ\VPGui.resources.dll
