@@ -96,7 +96,6 @@
             this.WeekChart.Size = new System.Drawing.Size(741, 395);
             this.WeekChart.TabIndex = 23;
             this.WeekChart.Text = "chart1";
-            this.WeekChart.Click += new System.EventHandler(this.WeekChart_Click);
             // 
             // StatsForm
             // 

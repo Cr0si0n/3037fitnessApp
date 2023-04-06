@@ -26,40 +26,6 @@ namespace VPGui
 
         private void UserAndPassEnterButton_Click(object sender, EventArgs e)
         {
-            /*
-            //comment out this section if it doesn't compile, the file system is finicky
-            string path = "";
-            path = Path.GetFullPath("UserAndPass.txt");
-            path = path.Substring(0, path.Length - 25);
-            path = path + "UserAndPass.txt";
-            string[] files = File.ReadAllLines(path);
-            string userinput = UsernameInput.Text;
-            string passinput = PasswordInput.Text;
-            int counter = 0;
-            string tempUser = "";
-            foreach (string line in files)
-            {
-                if (counter == 0)
-                {
-                    counter++;
-                    tempUser = line;
-
-                }
-                else
-                {
-                    counter--;
-                    if(userinput == tempUser && passinput == line)
-                    {
-                        HideWelcome();
-                        ShowWorkoutSelect();
-                    }
-                    //WorkoutSelection workoutform = new WorkoutSelection();
-                    //IsMdiContainer = true;
-                    //workoutform.Show();
-
-                }
-            }//end foreach
-            */
             // Query to check if username or password exists. (provide 0 if not, 1 if yes)
             string query = "SELECT COUNT(1) FROM LoginInfo WHERE Username = @Username AND Password = @Password";
 

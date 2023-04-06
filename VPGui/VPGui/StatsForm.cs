@@ -62,9 +62,6 @@ namespace VPGui
             this.Close();
         }
 
-        private void WeekChart_Click(object sender, EventArgs e)
-        {
-
-        }
+        
     }
 }

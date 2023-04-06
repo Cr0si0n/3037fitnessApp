@@ -41,8 +41,6 @@
             this.WkLabel1 = new System.Windows.Forms.Label();
             this.WkLabel2 = new System.Windows.Forms.Label();
             this.WkLogout = new System.Windows.Forms.Button();
-            this.Wkbutton3 = new System.Windows.Forms.Button();
-            this.Wkbutton2 = new System.Windows.Forms.Button();
             this.Wkbutton1 = new System.Windows.Forms.Button();
             this.GrpButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -179,32 +177,10 @@
             this.WkLogout.UseVisualStyleBackColor = true;
             this.WkLogout.Click += new System.EventHandler(this.WkLogout_Click);
             // 
-            // Wkbutton3
-            // 
-            this.Wkbutton3.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Wkbutton3.Location = new System.Drawing.Point(124, 385);
-            this.Wkbutton3.Margin = new System.Windows.Forms.Padding(6);
-            this.Wkbutton3.Name = "Wkbutton3";
-            this.Wkbutton3.Size = new System.Drawing.Size(210, 44);
-            this.Wkbutton3.TabIndex = 12;
-            this.Wkbutton3.Text = "Cardio";
-            this.Wkbutton3.UseVisualStyleBackColor = true;
-            // 
-            // Wkbutton2
-            // 
-            this.Wkbutton2.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Wkbutton2.Location = new System.Drawing.Point(124, 298);
-            this.Wkbutton2.Margin = new System.Windows.Forms.Padding(6);
-            this.Wkbutton2.Name = "Wkbutton2";
-            this.Wkbutton2.Size = new System.Drawing.Size(210, 44);
-            this.Wkbutton2.TabIndex = 13;
-            this.Wkbutton2.Text = "HIT";
-            this.Wkbutton2.UseVisualStyleBackColor = true;
-            // 
             // Wkbutton1
             // 
             this.Wkbutton1.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Wkbutton1.Location = new System.Drawing.Point(124, 213);
+            this.Wkbutton1.Location = new System.Drawing.Point(125, 275);
             this.Wkbutton1.Margin = new System.Windows.Forms.Padding(6);
             this.Wkbutton1.Name = "Wkbutton1";
             this.Wkbutton1.Size = new System.Drawing.Size(210, 44);
@@ -234,8 +210,6 @@
             this.ClientSize = new System.Drawing.Size(1210, 660);
             this.Controls.Add(this.GrpButton);
             this.Controls.Add(this.Wkbutton1);
-            this.Controls.Add(this.Wkbutton2);
-            this.Controls.Add(this.Wkbutton3);
             this.Controls.Add(this.WkLabel2);
             this.Controls.Add(this.WkLabel1);
             this.Controls.Add(this.UserAndPassEnterButton);
@@ -272,8 +246,6 @@
         private System.Windows.Forms.Label WkLabel1;
         private System.Windows.Forms.Label WkLabel2;
         private System.Windows.Forms.Button WkLogout;
-        private System.Windows.Forms.Button Wkbutton3;
-        private System.Windows.Forms.Button Wkbutton2;
         private System.Windows.Forms.Button Wkbutton1;
         private System.Windows.Forms.Button GrpButton;
     }

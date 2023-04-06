@@ -208,7 +208,6 @@
     </Content>
     <None Include="Resources\Body_Builder_Icon.jpg" />
     <None Include="Resources\Body_Builder_Icon.ico" />
-    <Content Include="UserAndPass.txt" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
