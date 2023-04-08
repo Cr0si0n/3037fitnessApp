@@ -19,7 +19,8 @@ namespace VPGui
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            Button button = (Button)sender;
+            textBox1.Text = textBox1.Text + button.Text + "\r\n" + "\r\n";
         }
 
         private void Shoulders_Load(object sender, EventArgs e)
@@ -50,6 +51,59 @@ namespace VPGui
         private void label3_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Button button = (Button)sender;
+            textBox1.Text = textBox1.Text + button.Text + "\r\n" + "\r\n";
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Button button = (Button)sender;
+            textBox1.Text = textBox1.Text + button.Text + "\r\n" + "\r\n";
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Button button = (Button)sender;
+            textBox1.Text = textBox1.Text + button.Text + "\r\n" + "\r\n";
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            Button button = (Button)sender;
+            textBox1.Text = textBox1.Text + button.Text + "\r\n" + "\r\n";
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Button button = (Button)sender;
+            textBox1.Text = textBox1.Text + button.Text + "\r\n" + "\r\n";
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            Button button = (Button)sender;
+            textBox1.Text = textBox1.Text + button.Text + "\r\n" + "\r\n";
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            Button button = (Button)sender;
+            textBox1.Text = textBox1.Text + button.Text + "\r\n" + "\r\n";
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            Button button = (Button)sender;
+            textBox1.Text = textBox1.Text + button.Text + "\r\n" + "\r\n";
         }
     }
 }

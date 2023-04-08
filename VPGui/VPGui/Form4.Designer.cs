@@ -119,6 +119,7 @@
             this.button1.TabIndex = 12;
             this.button1.Text = "DB Bicep Curl";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -129,6 +130,7 @@
             this.button2.TabIndex = 13;
             this.button2.Text = "Hammer Curl";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -139,6 +141,7 @@
             this.button3.TabIndex = 14;
             this.button3.Text = "Preacher Curl";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
@@ -149,6 +152,7 @@
             this.button4.TabIndex = 15;
             this.button4.Text = "Rev Grip Curl";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button9
             // 
@@ -183,6 +187,7 @@
             this.button5.TabIndex = 18;
             this.button5.Text = "Cable Curl";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button6
             // 
@@ -193,6 +198,7 @@
             this.button6.TabIndex = 19;
             this.button6.Text = "DB Tricep Ext";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button7
             // 
@@ -203,6 +209,7 @@
             this.button7.TabIndex = 20;
             this.button7.Text = "Tricep Pushdown";
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // button10
             // 
@@ -213,6 +220,7 @@
             this.button10.TabIndex = 21;
             this.button10.Text = "OH Cable Ext";
             this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
             // button11
             // 
@@ -223,6 +231,7 @@
             this.button11.TabIndex = 22;
             this.button11.Text = "Close Grip Bench";
             this.button11.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
             // button12
             // 
@@ -233,6 +242,7 @@
             this.button12.TabIndex = 23;
             this.button12.Text = "Tricep Push-up";
             this.button12.UseVisualStyleBackColor = true;
+            this.button12.Click += new System.EventHandler(this.button12_Click);
             // 
             // button13
             // 
