@@ -43,11 +43,10 @@
             // 
             // button1
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(74, 171);
-            this.button1.Margin = new System.Windows.Forms.Padding(6);
+            this.button1.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(33, 80);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(370, 110);
+            this.button1.Size = new System.Drawing.Size(113, 21);
             this.button1.TabIndex = 0;
             this.button1.Text = "Shoulders";
             this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
@@ -57,21 +56,19 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(62, 56);
-            this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(28, 28);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(780, 63);
+            this.label1.Size = new System.Drawing.Size(191, 19);
             this.label1.TabIndex = 1;
             this.label1.Text = "Please Select a Muscle Group";
             // 
             // button2
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(74, 292);
-            this.button2.Margin = new System.Windows.Forms.Padding(6);
+            this.button2.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(33, 125);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(370, 110);
+            this.button2.Size = new System.Drawing.Size(113, 21);
             this.button2.TabIndex = 2;
             this.button2.Text = "Chest";
             this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
@@ -80,11 +77,10 @@
             // 
             // button3
             // 
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(74, 413);
-            this.button3.Margin = new System.Windows.Forms.Padding(6);
+            this.button3.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Location = new System.Drawing.Point(33, 170);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(370, 110);
+            this.button3.Size = new System.Drawing.Size(113, 21);
             this.button3.TabIndex = 3;
             this.button3.Text = "Arms";
             this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
@@ -93,11 +89,10 @@
             // 
             // button4
             // 
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(572, 171);
-            this.button4.Margin = new System.Windows.Forms.Padding(6);
+            this.button4.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.Location = new System.Drawing.Point(223, 80);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(370, 110);
+            this.button4.Size = new System.Drawing.Size(113, 21);
             this.button4.TabIndex = 4;
             this.button4.Text = "Upper Back";
             this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
@@ -106,11 +101,10 @@
             // 
             // button5
             // 
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(572, 292);
-            this.button5.Margin = new System.Windows.Forms.Padding(6);
+            this.button5.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.Location = new System.Drawing.Point(223, 125);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(370, 110);
+            this.button5.Size = new System.Drawing.Size(113, 21);
             this.button5.TabIndex = 5;
             this.button5.Text = "Legs";
             this.button5.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
@@ -119,11 +113,10 @@
             // 
             // button6
             // 
-            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Location = new System.Drawing.Point(1278, 669);
-            this.button6.Margin = new System.Windows.Forms.Padding(6);
+            this.button6.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.Location = new System.Drawing.Point(563, 283);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(254, 60);
+            this.button6.Size = new System.Drawing.Size(113, 21);
             this.button6.TabIndex = 6;
             this.button6.Text = "Back";
             this.button6.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
@@ -132,47 +125,46 @@
             // 
             // button7
             // 
-            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.Location = new System.Drawing.Point(1278, 740);
-            this.button7.Margin = new System.Windows.Forms.Padding(6);
+            this.button7.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button7.Location = new System.Drawing.Point(563, 310);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(254, 60);
+            this.button7.Size = new System.Drawing.Size(113, 21);
             this.button7.TabIndex = 7;
-            this.button7.Text = "ESC";
+            this.button7.Text = "Exit";
             this.button7.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
             this.button7.UseVisualStyleBackColor = true;
             this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // button8
             // 
-            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.Location = new System.Drawing.Point(1278, 598);
-            this.button8.Margin = new System.Windows.Forms.Padding(6);
+            this.button8.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button8.Location = new System.Drawing.Point(444, 283);
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(254, 60);
+            this.button8.Size = new System.Drawing.Size(113, 48);
             this.button8.TabIndex = 8;
             this.button8.Text = "Bodybuilding Stats";
             this.button8.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
             this.button8.UseMnemonic = false;
             this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // button9
             // 
-            this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button9.Location = new System.Drawing.Point(572, 413);
-            this.button9.Margin = new System.Windows.Forms.Padding(6);
+            this.button9.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button9.Location = new System.Drawing.Point(223, 170);
             this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(370, 110);
+            this.button9.Size = new System.Drawing.Size(113, 21);
             this.button9.TabIndex = 9;
             this.button9.Text = "Abs/ Lower Back";
             this.button9.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
             this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // bodybuilding
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1600, 865);
+            this.ClientSize = new System.Drawing.Size(688, 343);
             this.Controls.Add(this.button9);
             this.Controls.Add(this.button8);
             this.Controls.Add(this.button7);
@@ -184,7 +176,6 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "bodybuilding";
             this.Text = "Bodybuilding";
             this.Load += new System.EventHandler(this.bodybuilding_Load);

@@ -76,7 +76,6 @@ namespace VPGui
 
         private void HideWelcome()
         {
-            ExitButton.Hide();
             PasswordInput.Hide();
             UsernameInput.Hide();
             PasswordLabel.Hide();
@@ -107,8 +106,6 @@ namespace VPGui
             WkLabel1.Hide();
             WkLogout.Hide();
             Wkbutton1.Hide();
-            Wkbutton2.Hide();
-            Wkbutton3.Hide();
             GrpButton.Hide();
         }
 
@@ -118,8 +115,6 @@ namespace VPGui
             WkLabel2.Show();
             WkLogout.Show();
             Wkbutton1.Show();
-            Wkbutton2.Show();
-            Wkbutton3.Show();
             GrpButton.Show();
 
         }

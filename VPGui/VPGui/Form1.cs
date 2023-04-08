@@ -62,5 +62,16 @@ namespace VPGui
             UpperBack f1 = new UpperBack();
             f1.Show();
         }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            Abs f1 = new Abs();
+            f1.Show();
+        }
     }
 }

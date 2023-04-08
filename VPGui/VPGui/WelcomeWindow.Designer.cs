@@ -49,10 +49,9 @@
             // 
             this.WelcomeLabel.AutoSize = true;
             this.WelcomeLabel.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.WelcomeLabel.Location = new System.Drawing.Point(96, 90);
-            this.WelcomeLabel.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.WelcomeLabel.Location = new System.Drawing.Point(48, 47);
             this.WelcomeLabel.Name = "WelcomeLabel";
-            this.WelcomeLabel.Size = new System.Drawing.Size(540, 36);
+            this.WelcomeLabel.Size = new System.Drawing.Size(265, 19);
             this.WelcomeLabel.TabIndex = 0;
             this.WelcomeLabel.Text = "Welcome to The Visual Workout Manager";
             // 
@@ -60,10 +59,9 @@
             // 
             this.UsernameLabel.AutoSize = true;
             this.UsernameLabel.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UsernameLabel.Location = new System.Drawing.Point(156, 263);
-            this.UsernameLabel.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.UsernameLabel.Location = new System.Drawing.Point(78, 137);
             this.UsernameLabel.Name = "UsernameLabel";
-            this.UsernameLabel.Size = new System.Drawing.Size(118, 29);
+            this.UsernameLabel.Size = new System.Drawing.Size(60, 15);
             this.UsernameLabel.TabIndex = 1;
             this.UsernameLabel.Text = "Username";
             // 
@@ -71,10 +69,9 @@
             // 
             this.PasswordLabel.AutoSize = true;
             this.PasswordLabel.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PasswordLabel.Location = new System.Drawing.Point(156, 325);
-            this.PasswordLabel.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.PasswordLabel.Location = new System.Drawing.Point(78, 169);
             this.PasswordLabel.Name = "PasswordLabel";
-            this.PasswordLabel.Size = new System.Drawing.Size(114, 29);
+            this.PasswordLabel.Size = new System.Drawing.Size(59, 15);
             this.PasswordLabel.TabIndex = 2;
             this.PasswordLabel.Text = "Password";
             // 
@@ -82,20 +79,18 @@
             // 
             this.SignInLabel.AutoSize = true;
             this.SignInLabel.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SignInLabel.Location = new System.Drawing.Point(156, 179);
-            this.SignInLabel.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.SignInLabel.Location = new System.Drawing.Point(78, 93);
             this.SignInLabel.Name = "SignInLabel";
-            this.SignInLabel.Size = new System.Drawing.Size(100, 34);
+            this.SignInLabel.Size = new System.Drawing.Size(49, 17);
             this.SignInLabel.TabIndex = 3;
             this.SignInLabel.Text = "Sign In";
             // 
             // CreateNewUserButton
             // 
             this.CreateNewUserButton.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CreateNewUserButton.Location = new System.Drawing.Point(164, 513);
-            this.CreateNewUserButton.Margin = new System.Windows.Forms.Padding(6);
+            this.CreateNewUserButton.Location = new System.Drawing.Point(82, 267);
             this.CreateNewUserButton.Name = "CreateNewUserButton";
-            this.CreateNewUserButton.Size = new System.Drawing.Size(226, 42);
+            this.CreateNewUserButton.Size = new System.Drawing.Size(113, 22);
             this.CreateNewUserButton.TabIndex = 4;
             this.CreateNewUserButton.Text = "Create New User";
             this.CreateNewUserButton.UseVisualStyleBackColor = true;
@@ -104,10 +99,9 @@
             // ExitButton
             // 
             this.ExitButton.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ExitButton.Location = new System.Drawing.Point(800, 513);
-            this.ExitButton.Margin = new System.Windows.Forms.Padding(6);
+            this.ExitButton.Location = new System.Drawing.Point(480, 309);
             this.ExitButton.Name = "ExitButton";
-            this.ExitButton.Size = new System.Drawing.Size(174, 42);
+            this.ExitButton.Size = new System.Drawing.Size(113, 22);
             this.ExitButton.TabIndex = 5;
             this.ExitButton.Text = "Exit";
             this.ExitButton.UseVisualStyleBackColor = true;
@@ -116,28 +110,25 @@
             // UsernameInput
             // 
             this.UsernameInput.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UsernameInput.Location = new System.Drawing.Point(392, 258);
-            this.UsernameInput.Margin = new System.Windows.Forms.Padding(6);
+            this.UsernameInput.Location = new System.Drawing.Point(196, 134);
             this.UsernameInput.Name = "UsernameInput";
-            this.UsernameInput.Size = new System.Drawing.Size(390, 37);
+            this.UsernameInput.Size = new System.Drawing.Size(197, 22);
             this.UsernameInput.TabIndex = 6;
             // 
             // PasswordInput
             // 
-            this.PasswordInput.Location = new System.Drawing.Point(392, 321);
-            this.PasswordInput.Margin = new System.Windows.Forms.Padding(6);
+            this.PasswordInput.Location = new System.Drawing.Point(196, 167);
             this.PasswordInput.Name = "PasswordInput";
-            this.PasswordInput.Size = new System.Drawing.Size(390, 31);
+            this.PasswordInput.Size = new System.Drawing.Size(197, 20);
             this.PasswordInput.TabIndex = 7;
             this.PasswordInput.UseSystemPasswordChar = true;
             // 
             // UserAndPassEnterButton
             // 
             this.UserAndPassEnterButton.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UserAndPassEnterButton.Location = new System.Drawing.Point(852, 321);
-            this.UserAndPassEnterButton.Margin = new System.Windows.Forms.Padding(6);
+            this.UserAndPassEnterButton.Location = new System.Drawing.Point(426, 167);
             this.UserAndPassEnterButton.Name = "UserAndPassEnterButton";
-            this.UserAndPassEnterButton.Size = new System.Drawing.Size(150, 44);
+            this.UserAndPassEnterButton.Size = new System.Drawing.Size(75, 23);
             this.UserAndPassEnterButton.TabIndex = 8;
             this.UserAndPassEnterButton.Text = "Enter";
             this.UserAndPassEnterButton.UseVisualStyleBackColor = true;
@@ -147,10 +138,9 @@
             // 
             this.WkLabel1.AutoSize = true;
             this.WkLabel1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.WkLabel1.Location = new System.Drawing.Point(96, 73);
-            this.WkLabel1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.WkLabel1.Location = new System.Drawing.Point(28, 28);
             this.WkLabel1.Name = "WkLabel1";
-            this.WkLabel1.Size = new System.Drawing.Size(207, 36);
+            this.WkLabel1.Size = new System.Drawing.Size(103, 19);
             this.WkLabel1.TabIndex = 9;
             this.WkLabel1.Text = "WelcomeBack!";
             // 
@@ -158,20 +148,18 @@
             // 
             this.WkLabel2.AutoSize = true;
             this.WkLabel2.Font = new System.Drawing.Font("Times New Roman", 11F);
-            this.WkLabel2.Location = new System.Drawing.Point(96, 137);
-            this.WkLabel2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.WkLabel2.Location = new System.Drawing.Point(33, 80);
             this.WkLabel2.Name = "WkLabel2";
-            this.WkLabel2.Size = new System.Drawing.Size(303, 34);
+            this.WkLabel2.Size = new System.Drawing.Size(148, 17);
             this.WkLabel2.TabIndex = 10;
-            this.WkLabel2.Text = "Please Select A Workout";
+            this.WkLabel2.Text = "Please Select an Option";
             // 
             // WkLogout
             // 
             this.WkLogout.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.WkLogout.Location = new System.Drawing.Point(800, 513);
-            this.WkLogout.Margin = new System.Windows.Forms.Padding(6);
+            this.WkLogout.Location = new System.Drawing.Point(480, 281);
             this.WkLogout.Name = "WkLogout";
-            this.WkLogout.Size = new System.Drawing.Size(174, 42);
+            this.WkLogout.Size = new System.Drawing.Size(113, 22);
             this.WkLogout.TabIndex = 11;
             this.WkLogout.Text = "Logout";
             this.WkLogout.UseVisualStyleBackColor = true;
@@ -180,22 +168,21 @@
             // Wkbutton1
             // 
             this.Wkbutton1.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Wkbutton1.Location = new System.Drawing.Point(125, 275);
-            this.Wkbutton1.Margin = new System.Windows.Forms.Padding(6);
+            this.Wkbutton1.Location = new System.Drawing.Point(33, 125);
             this.Wkbutton1.Name = "Wkbutton1";
-            this.Wkbutton1.Size = new System.Drawing.Size(210, 44);
+            this.Wkbutton1.Size = new System.Drawing.Size(105, 23);
             this.Wkbutton1.TabIndex = 14;
-            this.Wkbutton1.Text = "Bodybuilding";
+            this.Wkbutton1.Text = "Workout";
             this.Wkbutton1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.Wkbutton1.UseVisualStyleBackColor = true;
             this.Wkbutton1.Click += new System.EventHandler(this.Wkbutton1_Click);
             // 
             // GrpButton
             // 
-            this.GrpButton.Location = new System.Drawing.Point(512, 515);
-            this.GrpButton.Margin = new System.Windows.Forms.Padding(4);
+            this.GrpButton.Location = new System.Drawing.Point(33, 170);
+            this.GrpButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.GrpButton.Name = "GrpButton";
-            this.GrpButton.Size = new System.Drawing.Size(174, 42);
+            this.GrpButton.Size = new System.Drawing.Size(104, 22);
             this.GrpButton.TabIndex = 15;
             this.GrpButton.Text = "Weekly Stats";
             this.GrpButton.UseVisualStyleBackColor = true;
@@ -204,10 +191,10 @@
             // VPGui
             // 
             this.AcceptButton = this.UserAndPassEnterButton;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(1210, 660);
+            this.ClientSize = new System.Drawing.Size(605, 343);
             this.Controls.Add(this.GrpButton);
             this.Controls.Add(this.Wkbutton1);
             this.Controls.Add(this.WkLabel2);
@@ -223,7 +210,6 @@
             this.Controls.Add(this.WkLogout);
             this.Controls.Add(this.ExitButton);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "VPGui";
             this.Text = "Visual Workout Manager";
             this.Load += new System.EventHandler(this.VPGui_Load);
