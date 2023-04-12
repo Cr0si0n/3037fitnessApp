@@ -112,3 +112,14 @@ C:\Users\antho\Source\Repos\3037fitnessApp\VPGui\VPGui\obj\Debug\aa-DJ\VPGui.res
 C:\Users\antho\Source\Repos\3037fitnessApp\VPGui\VPGui\obj\Debug\VPGui.exe
 C:\Users\antho\Source\Repos\3037fitnessApp\VPGui\VPGui\obj\Debug\VPGui.pdb
 C:\Users\antho\Source\Repos\3037fitnessApp\VPGui\VPGui\obj\Debug\VPGui.Abs.resources
+C:\Users\xialo\OneDrive\Documents\1codeprojects\3037fitnessApp\VPGui\VPGui\bin\Debug\aa-DJ\VPGui.resources.dll
+C:\Users\xialo\OneDrive\Documents\1codeprojects\3037fitnessApp\VPGui\VPGui\obj\Debug\VPGui.bodybuilding.resources
+C:\Users\xialo\OneDrive\Documents\1codeprojects\3037fitnessApp\VPGui\VPGui\obj\Debug\VPGui.Shoulders.resources
+C:\Users\xialo\OneDrive\Documents\1codeprojects\3037fitnessApp\VPGui\VPGui\obj\Debug\VPGui.Chest.resources
+C:\Users\xialo\OneDrive\Documents\1codeprojects\3037fitnessApp\VPGui\VPGui\obj\Debug\VPGui.Arms.resources
+C:\Users\xialo\OneDrive\Documents\1codeprojects\3037fitnessApp\VPGui\VPGui\obj\Debug\VPGui.UpperBack.resources
+C:\Users\xialo\OneDrive\Documents\1codeprojects\3037fitnessApp\VPGui\VPGui\obj\Debug\VPGui.Legs.resources
+C:\Users\xialo\OneDrive\Documents\1codeprojects\3037fitnessApp\VPGui\VPGui\obj\Debug\VPGui.Abs.resources
+C:\Users\xialo\OneDrive\Documents\1codeprojects\3037fitnessApp\VPGui\VPGui\obj\Debug\VPGui.StatsForm.resources
+C:\Users\xialo\OneDrive\Documents\1codeprojects\3037fitnessApp\VPGui\VPGui\obj\Debug\VPGui.bodybuilding.aa-DJ.resources
+C:\Users\xialo\OneDrive\Documents\1codeprojects\3037fitnessApp\VPGui\VPGui\obj\Debug\aa-DJ\VPGui.resources.dll
