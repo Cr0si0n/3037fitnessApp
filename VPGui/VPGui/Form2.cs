@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,6 +14,10 @@ namespace VPGui
 {
     public partial class Shoulders : Form
     {
+        SqlConnection connection;
+
+        string conString = $"Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename={Path.GetFullPath("InfoDatabase.mdf").Replace("bin\\Debug\\", "")};Integrated Security=True";
+        string username = VPGui.username;
         public Shoulders()
         {
             InitializeComponent();
@@ -165,6 +171,16 @@ namespace VPGui
         {
             textBox2.Text = "The cable face pull with external rotation is a variation of the cable face pull and a great shoulder exercise that can be used to target the rear deltoids." +
                 " Not many exercises can effectively target the rear delts like cable face pull can.";
+        }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void numericUpDown6_ValueChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

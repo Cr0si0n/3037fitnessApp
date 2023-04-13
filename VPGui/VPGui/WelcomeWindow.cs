@@ -18,7 +18,7 @@ namespace VPGui
         SqlConnection connection;
 
         string conString = $"Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename={Path.GetFullPath("InfoDatabase.mdf").Replace("bin\\Debug\\", "")};Integrated Security=True";
-
+        public static string username = "";
         public VPGui()
         {
             InitializeComponent();
@@ -37,6 +37,8 @@ namespace VPGui
                 // Fills in the parameters needed for comparison
                 command.Parameters.AddWithValue("@Username", UsernameInput.Text);
                 command.Parameters.AddWithValue("@Password", PasswordInput.Text);
+
+                username = UsernameInput.Text;
 
                 // Puts the result of the query into variable
                 int userExists = (int)command.ExecuteScalar();
