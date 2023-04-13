@@ -138,6 +138,31 @@ namespace VPGui
             StatsForm child = new StatsForm();
             child.Show();
         }
+
+        private void UsernameLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void WkLabel1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void WelcomeLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void SignInLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void WkLabel2_Click(object sender, EventArgs e)
+        {
+
+        }
     }//End VPGui
 
 
