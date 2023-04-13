@@ -150,3 +150,7 @@ C:\Users\forbe\OneDrive\Desktop\csci\3037fitnessApp\VPGui\VPGui\obj\Debug\VPGui.
 C:\Users\forbe\OneDrive\Desktop\csci\3037fitnessApp\VPGui\VPGui\obj\Debug\aa-DJ\VPGui.resources.dll
 C:\Users\forbe\OneDrive\Desktop\csci\3037fitnessApp\VPGui\VPGui\obj\Debug\VPGui.exe
 C:\Users\forbe\OneDrive\Desktop\csci\3037fitnessApp\VPGui\VPGui\obj\Debug\VPGui.pdb
+C:\Users\antho\source\repos\fitnessApp\VPGui\VPGui\obj\Debug\VPGui.Arms.resources
+C:\Users\antho\source\repos\fitnessApp\VPGui\VPGui\obj\Debug\VPGui.UpperBack.resources
+C:\Users\antho\source\repos\fitnessApp\VPGui\VPGui\obj\Debug\VPGui.Legs.resources
+C:\Users\antho\source\repos\fitnessApp\VPGui\VPGui\obj\Debug\VPGui.Abs.resources

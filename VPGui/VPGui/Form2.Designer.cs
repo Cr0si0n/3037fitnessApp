@@ -52,52 +52,16 @@
             this.button20 = new System.Windows.Forms.Button();
             this.button21 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.Reps1 = new System.Windows.Forms.NumericUpDown();
-            this.Sets1 = new System.Windows.Forms.NumericUpDown();
-            this.Sets2 = new System.Windows.Forms.NumericUpDown();
-            this.Reps2 = new System.Windows.Forms.NumericUpDown();
-            this.Sets3 = new System.Windows.Forms.NumericUpDown();
-            this.Reps3 = new System.Windows.Forms.NumericUpDown();
-            this.Sets4 = new System.Windows.Forms.NumericUpDown();
-            this.Reps4 = new System.Windows.Forms.NumericUpDown();
-            this.Sets5 = new System.Windows.Forms.NumericUpDown();
-            this.Reps5 = new System.Windows.Forms.NumericUpDown();
-            this.Sets6 = new System.Windows.Forms.NumericUpDown();
-            this.Reps6 = new System.Windows.Forms.NumericUpDown();
-            this.Sets7 = new System.Windows.Forms.NumericUpDown();
-            this.Reps7 = new System.Windows.Forms.NumericUpDown();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.Weight1 = new System.Windows.Forms.NumericUpDown();
-            this.Weight2 = new System.Windows.Forms.NumericUpDown();
-            this.Weight3 = new System.Windows.Forms.NumericUpDown();
-            this.Weight4 = new System.Windows.Forms.NumericUpDown();
-            this.Weight5 = new System.Windows.Forms.NumericUpDown();
-            this.Weight6 = new System.Windows.Forms.NumericUpDown();
-            this.Weight7 = new System.Windows.Forms.NumericUpDown();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            ((System.ComponentModel.ISupportInitialize)(this.Reps1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Sets1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Sets2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Reps2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Sets3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Reps3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Sets4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Reps4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Sets5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Reps5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Sets6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Reps6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Sets7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Reps7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Weight1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Weight2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Weight3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Weight4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Weight5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Weight6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Weight7)).BeginInit();
+            this.label4 = new System.Windows.Forms.Label();
+            this.Sets = new System.Windows.Forms.TextBox();
+            this.Reps = new System.Windows.Forms.TextBox();
+            this.Weight = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.button22 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -356,120 +320,6 @@
             this.textBox1.TabIndex = 28;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // Reps1
-            // 
-            this.Reps1.Location = new System.Drawing.Point(542, 64);
-            this.Reps1.Name = "Reps1";
-            this.Reps1.Size = new System.Drawing.Size(36, 20);
-            this.Reps1.TabIndex = 29;
-            this.Reps1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.Reps1.ValueChanged += new System.EventHandler(this.numericUpDown1_ValueChanged);
-            // 
-            // Sets1
-            // 
-            this.Sets1.Location = new System.Drawing.Point(500, 64);
-            this.Sets1.Name = "Sets1";
-            this.Sets1.Size = new System.Drawing.Size(36, 20);
-            this.Sets1.TabIndex = 30;
-            this.Sets1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // Sets2
-            // 
-            this.Sets2.Location = new System.Drawing.Point(500, 90);
-            this.Sets2.Name = "Sets2";
-            this.Sets2.Size = new System.Drawing.Size(36, 20);
-            this.Sets2.TabIndex = 32;
-            this.Sets2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // Reps2
-            // 
-            this.Reps2.Location = new System.Drawing.Point(542, 90);
-            this.Reps2.Name = "Reps2";
-            this.Reps2.Size = new System.Drawing.Size(36, 20);
-            this.Reps2.TabIndex = 31;
-            this.Reps2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // Sets3
-            // 
-            this.Sets3.Location = new System.Drawing.Point(500, 116);
-            this.Sets3.Name = "Sets3";
-            this.Sets3.Size = new System.Drawing.Size(36, 20);
-            this.Sets3.TabIndex = 34;
-            this.Sets3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // Reps3
-            // 
-            this.Reps3.Location = new System.Drawing.Point(542, 116);
-            this.Reps3.Name = "Reps3";
-            this.Reps3.Size = new System.Drawing.Size(36, 20);
-            this.Reps3.TabIndex = 33;
-            this.Reps3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.Reps3.ValueChanged += new System.EventHandler(this.numericUpDown6_ValueChanged);
-            // 
-            // Sets4
-            // 
-            this.Sets4.Location = new System.Drawing.Point(500, 142);
-            this.Sets4.Name = "Sets4";
-            this.Sets4.Size = new System.Drawing.Size(36, 20);
-            this.Sets4.TabIndex = 36;
-            this.Sets4.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // Reps4
-            // 
-            this.Reps4.Location = new System.Drawing.Point(542, 142);
-            this.Reps4.Name = "Reps4";
-            this.Reps4.Size = new System.Drawing.Size(36, 20);
-            this.Reps4.TabIndex = 35;
-            this.Reps4.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // Sets5
-            // 
-            this.Sets5.Location = new System.Drawing.Point(500, 168);
-            this.Sets5.Name = "Sets5";
-            this.Sets5.Size = new System.Drawing.Size(36, 20);
-            this.Sets5.TabIndex = 38;
-            this.Sets5.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // Reps5
-            // 
-            this.Reps5.Location = new System.Drawing.Point(542, 168);
-            this.Reps5.Name = "Reps5";
-            this.Reps5.Size = new System.Drawing.Size(36, 20);
-            this.Reps5.TabIndex = 37;
-            this.Reps5.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // Sets6
-            // 
-            this.Sets6.Location = new System.Drawing.Point(500, 194);
-            this.Sets6.Name = "Sets6";
-            this.Sets6.Size = new System.Drawing.Size(36, 20);
-            this.Sets6.TabIndex = 40;
-            this.Sets6.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // Reps6
-            // 
-            this.Reps6.Location = new System.Drawing.Point(542, 194);
-            this.Reps6.Name = "Reps6";
-            this.Reps6.Size = new System.Drawing.Size(36, 20);
-            this.Reps6.TabIndex = 39;
-            this.Reps6.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // Sets7
-            // 
-            this.Sets7.Location = new System.Drawing.Point(500, 220);
-            this.Sets7.Name = "Sets7";
-            this.Sets7.Size = new System.Drawing.Size(36, 20);
-            this.Sets7.TabIndex = 42;
-            this.Sets7.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // Reps7
-            // 
-            this.Reps7.Location = new System.Drawing.Point(542, 220);
-            this.Reps7.Name = "Reps7";
-            this.Reps7.Size = new System.Drawing.Size(36, 20);
-            this.Reps7.TabIndex = 41;
-            this.Reps7.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -491,62 +341,6 @@
             this.label3.Text = "Exercise";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
-            // Weight1
-            // 
-            this.Weight1.Location = new System.Drawing.Point(584, 64);
-            this.Weight1.Name = "Weight1";
-            this.Weight1.Size = new System.Drawing.Size(77, 20);
-            this.Weight1.TabIndex = 45;
-            this.Weight1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // Weight2
-            // 
-            this.Weight2.Location = new System.Drawing.Point(584, 90);
-            this.Weight2.Name = "Weight2";
-            this.Weight2.Size = new System.Drawing.Size(77, 20);
-            this.Weight2.TabIndex = 46;
-            this.Weight2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // Weight3
-            // 
-            this.Weight3.Location = new System.Drawing.Point(584, 116);
-            this.Weight3.Name = "Weight3";
-            this.Weight3.Size = new System.Drawing.Size(77, 20);
-            this.Weight3.TabIndex = 47;
-            this.Weight3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // Weight4
-            // 
-            this.Weight4.Location = new System.Drawing.Point(584, 142);
-            this.Weight4.Name = "Weight4";
-            this.Weight4.Size = new System.Drawing.Size(77, 20);
-            this.Weight4.TabIndex = 48;
-            this.Weight4.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // Weight5
-            // 
-            this.Weight5.Location = new System.Drawing.Point(584, 168);
-            this.Weight5.Name = "Weight5";
-            this.Weight5.Size = new System.Drawing.Size(77, 20);
-            this.Weight5.TabIndex = 49;
-            this.Weight5.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // Weight6
-            // 
-            this.Weight6.Location = new System.Drawing.Point(584, 194);
-            this.Weight6.Name = "Weight6";
-            this.Weight6.Size = new System.Drawing.Size(77, 20);
-            this.Weight6.TabIndex = 50;
-            this.Weight6.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // Weight7
-            // 
-            this.Weight7.Location = new System.Drawing.Point(584, 220);
-            this.Weight7.Name = "Weight7";
-            this.Weight7.Size = new System.Drawing.Size(77, 20);
-            this.Weight7.TabIndex = 51;
-            this.Weight7.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
             // textBox2
             // 
             this.textBox2.Location = new System.Drawing.Point(17, 321);
@@ -561,29 +355,8 @@
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(59)))), ((int)(((byte)(57)))));
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.textBox2);
-            this.panel1.Controls.Add(this.Weight7);
-            this.panel1.Controls.Add(this.Weight6);
-            this.panel1.Controls.Add(this.Weight5);
-            this.panel1.Controls.Add(this.Weight4);
-            this.panel1.Controls.Add(this.Weight3);
-            this.panel1.Controls.Add(this.Weight2);
-            this.panel1.Controls.Add(this.Weight1);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.Sets7);
-            this.panel1.Controls.Add(this.Reps7);
-            this.panel1.Controls.Add(this.Sets6);
-            this.panel1.Controls.Add(this.Reps6);
-            this.panel1.Controls.Add(this.Sets5);
-            this.panel1.Controls.Add(this.Reps5);
-            this.panel1.Controls.Add(this.Sets4);
-            this.panel1.Controls.Add(this.Reps4);
-            this.panel1.Controls.Add(this.Sets3);
-            this.panel1.Controls.Add(this.Reps3);
-            this.panel1.Controls.Add(this.Sets2);
-            this.panel1.Controls.Add(this.Reps2);
-            this.panel1.Controls.Add(this.Sets1);
-            this.panel1.Controls.Add(this.Reps1);
             this.panel1.Controls.Add(this.textBox1);
             this.panel1.Controls.Add(this.button21);
             this.panel1.Controls.Add(this.button20);
@@ -607,10 +380,74 @@
             this.panel1.Controls.Add(this.button8);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.label5);
+            this.panel1.Controls.Add(this.Sets);
+            this.panel1.Controls.Add(this.Weight);
+            this.panel1.Controls.Add(this.Reps);
+            this.panel1.Controls.Add(this.label4);
+            this.panel1.Controls.Add(this.button22);
             this.panel1.Location = new System.Drawing.Point(22, 24);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(673, 414);
             this.panel1.TabIndex = 53;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(14, 31);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(346, 19);
+            this.label4.TabIndex = 53;
+            this.label4.Text = "Add your Sets x Reps and Weight (lbs) for this Exercise";
+            // 
+            // Sets
+            // 
+            this.Sets.Location = new System.Drawing.Point(18, 89);
+            this.Sets.Name = "Sets";
+            this.Sets.Size = new System.Drawing.Size(26, 20);
+            this.Sets.TabIndex = 54;
+            this.Sets.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.Sets.TextChanged += new System.EventHandler(this.Sets_TextChanged);
+            // 
+            // Reps
+            // 
+            this.Reps.Location = new System.Drawing.Point(59, 89);
+            this.Reps.Name = "Reps";
+            this.Reps.Size = new System.Drawing.Size(26, 20);
+            this.Reps.TabIndex = 55;
+            this.Reps.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // Weight
+            // 
+            this.Weight.Location = new System.Drawing.Point(109, 89);
+            this.Weight.Name = "Weight";
+            this.Weight.Size = new System.Drawing.Size(52, 20);
+            this.Weight.TabIndex = 56;
+            this.Weight.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(14, 67);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(171, 19);
+            this.label5.TabIndex = 57;
+            this.label5.Text = "Sets    Reps    Weight (lbs)";
+            // 
+            // button22
+            // 
+            this.button22.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button22.Location = new System.Drawing.Point(208, 89);
+            this.button22.Name = "button22";
+            this.button22.Size = new System.Drawing.Size(113, 22);
+            this.button22.TabIndex = 58;
+            this.button22.Text = "Add to Workout";
+            this.button22.UseVisualStyleBackColor = true;
+            this.button22.Click += new System.EventHandler(this.button22_Click);
             // 
             // Shoulders
             // 
@@ -623,27 +460,6 @@
             this.Name = "Shoulders";
             this.Text = "Shoulders";
             this.Load += new System.EventHandler(this.Shoulders_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.Reps1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Sets1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Sets2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Reps2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Sets3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Reps3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Sets4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Reps4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Sets5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Reps5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Sets6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Reps6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Sets7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Reps7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Weight1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Weight2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Weight3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Weight4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Weight5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Weight6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Weight7)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -675,30 +491,15 @@
         private System.Windows.Forms.Button button20;
         private System.Windows.Forms.Button button21;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.NumericUpDown Reps1;
-        private System.Windows.Forms.NumericUpDown Sets1;
-        private System.Windows.Forms.NumericUpDown Sets2;
-        private System.Windows.Forms.NumericUpDown Reps2;
-        private System.Windows.Forms.NumericUpDown Sets3;
-        private System.Windows.Forms.NumericUpDown Reps3;
-        private System.Windows.Forms.NumericUpDown Sets4;
-        private System.Windows.Forms.NumericUpDown Reps4;
-        private System.Windows.Forms.NumericUpDown Sets5;
-        private System.Windows.Forms.NumericUpDown Reps5;
-        private System.Windows.Forms.NumericUpDown Sets6;
-        private System.Windows.Forms.NumericUpDown Reps6;
-        private System.Windows.Forms.NumericUpDown Sets7;
-        private System.Windows.Forms.NumericUpDown Reps7;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.NumericUpDown Weight1;
-        private System.Windows.Forms.NumericUpDown Weight2;
-        private System.Windows.Forms.NumericUpDown Weight3;
-        private System.Windows.Forms.NumericUpDown Weight4;
-        private System.Windows.Forms.NumericUpDown Weight5;
-        private System.Windows.Forms.NumericUpDown Weight6;
-        private System.Windows.Forms.NumericUpDown Weight7;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox Weight;
+        private System.Windows.Forms.TextBox Reps;
+        private System.Windows.Forms.TextBox Sets;
+        private System.Windows.Forms.Button button22;
     }
 }
