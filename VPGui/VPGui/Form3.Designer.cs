@@ -555,7 +555,7 @@
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Chest";
-            this.Text = "Form3";
+            this.Text = "Chest";
             this.Load += new System.EventHandler(this.Chest_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown21)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown20)).EndInit();
