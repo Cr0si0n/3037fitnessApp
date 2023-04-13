@@ -281,6 +281,7 @@
             this.button14.TabIndex = 33;
             this.button14.Text = "Desc";
             this.button14.UseVisualStyleBackColor = true;
+            this.button14.Click += new System.EventHandler(this.button14_Click);
             // 
             // button15
             // 
@@ -292,6 +293,7 @@
             this.button15.TabIndex = 34;
             this.button15.Text = "Desc";
             this.button15.UseVisualStyleBackColor = true;
+            this.button15.Click += new System.EventHandler(this.button15_Click);
             // 
             // button16
             // 
@@ -303,6 +305,7 @@
             this.button16.TabIndex = 35;
             this.button16.Text = "Desc";
             this.button16.UseVisualStyleBackColor = true;
+            this.button16.Click += new System.EventHandler(this.button16_Click);
             // 
             // button17
             // 
@@ -314,6 +317,7 @@
             this.button17.TabIndex = 36;
             this.button17.Text = "Desc";
             this.button17.UseVisualStyleBackColor = true;
+            this.button17.Click += new System.EventHandler(this.button17_Click);
             // 
             // button18
             // 
@@ -325,6 +329,7 @@
             this.button18.TabIndex = 37;
             this.button18.Text = "Desc";
             this.button18.UseVisualStyleBackColor = true;
+            this.button18.Click += new System.EventHandler(this.button18_Click);
             // 
             // button19
             // 
@@ -336,6 +341,7 @@
             this.button19.TabIndex = 38;
             this.button19.Text = "Desc";
             this.button19.UseVisualStyleBackColor = true;
+            this.button19.Click += new System.EventHandler(this.button19_Click);
             // 
             // button20
             // 
@@ -347,6 +353,7 @@
             this.button20.TabIndex = 39;
             this.button20.Text = "Desc";
             this.button20.UseVisualStyleBackColor = true;
+            this.button20.Click += new System.EventHandler(this.button20_Click);
             // 
             // button21
             // 
@@ -358,6 +365,7 @@
             this.button21.TabIndex = 40;
             this.button21.Text = "Desc";
             this.button21.UseVisualStyleBackColor = true;
+            this.button21.Click += new System.EventHandler(this.button21_Click);
             // 
             // button22
             // 
@@ -369,6 +377,7 @@
             this.button22.TabIndex = 41;
             this.button22.Text = "Desc";
             this.button22.UseVisualStyleBackColor = true;
+            this.button22.Click += new System.EventHandler(this.button22_Click);
             // 
             // button23
             // 
@@ -380,6 +389,7 @@
             this.button23.TabIndex = 42;
             this.button23.Text = "Desc";
             this.button23.UseVisualStyleBackColor = true;
+            this.button23.Click += new System.EventHandler(this.button23_Click);
             // 
             // numericUpDown21
             // 

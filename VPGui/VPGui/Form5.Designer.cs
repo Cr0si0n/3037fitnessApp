@@ -239,6 +239,7 @@
             this.button10.TabIndex = 28;
             this.button10.Text = "Desc";
             this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
             // button11
             // 
@@ -250,6 +251,7 @@
             this.button11.TabIndex = 29;
             this.button11.Text = "Desc";
             this.button11.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
             // button12
             // 
@@ -261,6 +263,7 @@
             this.button12.TabIndex = 30;
             this.button12.Text = "Desc";
             this.button12.UseVisualStyleBackColor = true;
+            this.button12.Click += new System.EventHandler(this.button12_Click);
             // 
             // button14
             // 
@@ -272,6 +275,7 @@
             this.button14.TabIndex = 31;
             this.button14.Text = "Desc";
             this.button14.UseVisualStyleBackColor = true;
+            this.button14.Click += new System.EventHandler(this.button14_Click);
             // 
             // button15
             // 
@@ -283,6 +287,7 @@
             this.button15.TabIndex = 32;
             this.button15.Text = "Desc";
             this.button15.UseVisualStyleBackColor = true;
+            this.button15.Click += new System.EventHandler(this.button15_Click);
             // 
             // button16
             // 
@@ -294,6 +299,7 @@
             this.button16.TabIndex = 33;
             this.button16.Text = "Desc";
             this.button16.UseVisualStyleBackColor = true;
+            this.button16.Click += new System.EventHandler(this.button16_Click);
             // 
             // button17
             // 
@@ -305,6 +311,7 @@
             this.button17.TabIndex = 34;
             this.button17.Text = "Desc";
             this.button17.UseVisualStyleBackColor = true;
+            this.button17.Click += new System.EventHandler(this.button17_Click);
             // 
             // numericUpDown21
             // 
