@@ -521,7 +521,7 @@
             // textBox2
             // 
             this.textBox2.Location = new System.Drawing.Point(18, 257);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(2);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(408, 60);
@@ -530,6 +530,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(59)))), ((int)(((byte)(57)))));
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.textBox2);
             this.panel1.Controls.Add(this.numericUpDown21);
             this.panel1.Controls.Add(this.numericUpDown20);

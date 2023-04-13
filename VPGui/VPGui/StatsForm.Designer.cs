@@ -74,7 +74,7 @@
             legend2.Name = "Legend1";
             this.WeekChart.Legends.Add(legend2);
             this.WeekChart.Location = new System.Drawing.Point(35, 45);
-            this.WeekChart.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.WeekChart.Margin = new System.Windows.Forms.Padding(2);
             this.WeekChart.Name = "WeekChart";
             series4.ChartArea = "ChartArea1";
             series4.IsXValueIndexed = true;
@@ -104,6 +104,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(59)))), ((int)(((byte)(57)))));
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.WeekChart);
             this.panel1.Controls.Add(this.WkLabel1);
             this.panel1.Controls.Add(this.WkClose);
