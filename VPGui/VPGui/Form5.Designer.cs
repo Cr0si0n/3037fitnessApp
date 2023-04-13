@@ -590,7 +590,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "UpperBack";
-            this.Text = "Upper Back";
+            this.Text = "UpperBack";
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown21)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown20)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown19)).EndInit();

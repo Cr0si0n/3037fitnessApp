@@ -674,7 +674,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Arms";
-            this.Text = "Arms";
+            this.Text = "Form4";
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown21)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown20)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown19)).EndInit();
