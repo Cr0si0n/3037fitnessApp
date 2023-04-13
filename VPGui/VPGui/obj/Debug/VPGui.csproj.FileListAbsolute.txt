@@ -123,3 +123,4 @@ C:\Users\xialo\OneDrive\Documents\1codeprojects\3037fitnessApp\VPGui\VPGui\obj\D
 C:\Users\xialo\OneDrive\Documents\1codeprojects\3037fitnessApp\VPGui\VPGui\obj\Debug\VPGui.StatsForm.resources
 C:\Users\xialo\OneDrive\Documents\1codeprojects\3037fitnessApp\VPGui\VPGui\obj\Debug\VPGui.bodybuilding.aa-DJ.resources
 C:\Users\xialo\OneDrive\Documents\1codeprojects\3037fitnessApp\VPGui\VPGui\obj\Debug\aa-DJ\VPGui.resources.dll
+C:\Users\grace\source\repos\3037fitnessApp\VPGui\VPGui\obj\Debug\VPGui.Abs.resources

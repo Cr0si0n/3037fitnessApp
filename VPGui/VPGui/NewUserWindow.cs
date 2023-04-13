@@ -44,7 +44,9 @@ namespace VPGui
         private void NewUserAndPassEnter_Click(object sender, EventArgs e)
         {
             // Query to insert new username and password into LoginInfo
-            string query = "INSERT INTO LoginInfo VALUES (@Username, @Password)";
+            string query = "INSERT INTO LoginInfo (Username, Password) VALUES (@Username, @Password)";
+            //string query = $"INSERT INTO LoginInfo (Username, Password) VALUES (\"{UserMakeInput.Text}\", \"{PassMakeInput.Text}\")";
+
 
             // Sets up the connection to the local database and has the command query from that connection (handles closing)
             using (connection = new SqlConnection(conString))
