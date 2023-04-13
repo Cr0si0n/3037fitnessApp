@@ -184,7 +184,7 @@
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(113, 22);
             this.button10.TabIndex = 16;
-            this.button10.Text = "Cable Fly";
+            this.button10.Text = "Cable Lat Raise";
             this.button10.UseVisualStyleBackColor = true;
             this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
