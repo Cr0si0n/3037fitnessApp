@@ -18,10 +18,24 @@ namespace VPGui
         SqlConnection connection;
 
         string conString = $"Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename={Path.GetFullPath("InfoDatabase.mdf").Replace("bin\\Debug\\", "")};Integrated Security=True";
-        public static string username = "";
+        public static int userId = -1;
         public VPGui()
         {
             InitializeComponent();
+        }
+
+        private void getId()
+        {
+            string query = "SELECT Id FROM LoginInfo WHERE Username = @Username AND Password = @Password";
+
+            using (connection = new SqlConnection(conString))
+            using (SqlCommand command = new SqlCommand(query, connection))
+            {
+                connection.Open();
+                command.Parameters.AddWithValue("@Username", UsernameInput.Text);
+                command.Parameters.AddWithValue("@Password", PasswordInput.Text);
+                userId = (int)command.ExecuteScalar();
+            }
         }
 
         private void UserAndPassEnterButton_Click(object sender, EventArgs e)
@@ -38,8 +52,6 @@ namespace VPGui
                 command.Parameters.AddWithValue("@Username", UsernameInput.Text);
                 command.Parameters.AddWithValue("@Password", PasswordInput.Text);
 
-                username = UsernameInput.Text;
-
                 // Puts the result of the query into variable
                 int userExists = (int)command.ExecuteScalar();
 
@@ -55,6 +67,7 @@ namespace VPGui
                     MessageBox.Show("Incorrect Username or Password!");
                 }
             }
+            getId();
         }
 
         private void ExitButton_Click(object sender, EventArgs e)

@@ -17,7 +17,7 @@ namespace VPGui
         SqlConnection connection;
 
         string conString = $"Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename={Path.GetFullPath("InfoDatabase.mdf").Replace("bin\\Debug\\", "")};Integrated Security=True";
-        string username = VPGui.username;
+        int userId = VPGui.userId;
         string buttonText;
         public Shoulders()
         {
@@ -470,7 +470,46 @@ namespace VPGui
 
         private void button12_Click(object sender, EventArgs e)
         {
-            
+
+            //rawList = textBox1.Text + buttonText + "\t\t" + Sets.Text + "   x   " + Reps.Text + "\t\t" + Weight.Text + " lbs" + "\r\n" + "\r\n";
+            //data = buttonText + "\t\t" + Sets.Text + "   x   " + Reps.Text + "\t\t" + Weight.Text + " lbs"
+            //workoutList = buttonText, "", Sets.Text, Reps.Text, "", Weight.Text + " lbs"
+            string[] rawList = textBox1.Text.Split(new string[] { "\r\n", "\r", "\n"}, StringSplitOptions.None);
+
+            foreach (string data in rawList)
+            {
+                string[] workoutList = data.Split(new string[] { "\t", "   x   " }, StringSplitOptions.None);
+
+                if (workoutList[0] == "DB Front Raise")
+                {
+                    callDatabase("DBFrontRaise_Set", int.Parse(workoutList[2]));
+                    callDatabase("DBFrontRaise_Rep", int.Parse(workoutList[3]));
+                    //subData = Weight.Text, " lbs"
+                    string[] subData = workoutList[5].Split(' ');
+                    callDatabase("DBFrontRaise_Wht", int.Parse(subData[0]));
+
+                    MessageBox.Show("Workout(s) Successfully Saved!");
+                }
+            }
+        }
+
+        private void callDatabase(string column, int value)
+        {
+            // Query to update workout info of current user into LoginInfo
+            string query = $"UPDATE LoginInfo SET {column} = @value WHERE Id = @id";
+
+            // Sets up the connection to the local database and has the command query from that connection (handles closing)
+            using (connection = new SqlConnection(conString))
+            using (SqlCommand command = new SqlCommand(query, connection))
+            {
+                connection.Open();
+                // Fills in the parameters needed for the command query
+                command.Parameters.AddWithValue("@value", value);
+                command.Parameters.AddWithValue("@id", userId);
+
+                // Gives comfirmation of updating
+                command.ExecuteNonQuery();
+            }
         }
 
         private void numericUpDown6_ValueChanged(object sender, EventArgs e)

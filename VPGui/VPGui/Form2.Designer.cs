@@ -56,11 +56,11 @@
             this.label3 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
-            this.Sets = new System.Windows.Forms.TextBox();
-            this.Reps = new System.Windows.Forms.TextBox();
-            this.Weight = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.Sets = new System.Windows.Forms.TextBox();
+            this.Weight = new System.Windows.Forms.TextBox();
+            this.Reps = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.button22 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -391,42 +391,6 @@
             this.panel1.Size = new System.Drawing.Size(673, 414);
             this.panel1.TabIndex = 53;
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(14, 31);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(346, 19);
-            this.label4.TabIndex = 53;
-            this.label4.Text = "Add your Sets x Reps and Weight (lbs) for this Exercise";
-            // 
-            // Sets
-            // 
-            this.Sets.Location = new System.Drawing.Point(18, 89);
-            this.Sets.Name = "Sets";
-            this.Sets.Size = new System.Drawing.Size(26, 20);
-            this.Sets.TabIndex = 54;
-            this.Sets.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.Sets.TextChanged += new System.EventHandler(this.Sets_TextChanged);
-            // 
-            // Reps
-            // 
-            this.Reps.Location = new System.Drawing.Point(59, 89);
-            this.Reps.Name = "Reps";
-            this.Reps.Size = new System.Drawing.Size(26, 20);
-            this.Reps.TabIndex = 55;
-            this.Reps.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // Weight
-            // 
-            this.Weight.Location = new System.Drawing.Point(109, 89);
-            this.Weight.Name = "Weight";
-            this.Weight.Size = new System.Drawing.Size(52, 20);
-            this.Weight.TabIndex = 56;
-            this.Weight.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -437,6 +401,42 @@
             this.label5.Size = new System.Drawing.Size(171, 19);
             this.label5.TabIndex = 57;
             this.label5.Text = "Sets    Reps    Weight (lbs)";
+            // 
+            // Sets
+            // 
+            this.Sets.Location = new System.Drawing.Point(18, 89);
+            this.Sets.Name = "Sets";
+            this.Sets.Size = new System.Drawing.Size(26, 20);
+            this.Sets.TabIndex = 54;
+            this.Sets.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.Sets.TextChanged += new System.EventHandler(this.Sets_TextChanged);
+            // 
+            // Weight
+            // 
+            this.Weight.Location = new System.Drawing.Point(109, 89);
+            this.Weight.Name = "Weight";
+            this.Weight.Size = new System.Drawing.Size(52, 20);
+            this.Weight.TabIndex = 56;
+            this.Weight.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // Reps
+            // 
+            this.Reps.Location = new System.Drawing.Point(59, 89);
+            this.Reps.Name = "Reps";
+            this.Reps.Size = new System.Drawing.Size(26, 20);
+            this.Reps.TabIndex = 55;
+            this.Reps.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(14, 31);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(346, 19);
+            this.label4.TabIndex = 53;
+            this.label4.Text = "Add your Sets x Reps and Weight (lbs) for this Exercise";
             // 
             // button22
             // 
