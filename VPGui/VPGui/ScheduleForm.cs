@@ -37,7 +37,7 @@ namespace VPGui
             foreach (string day in days)
             {
                 string info = "";
-                // Query to check if username or password exists. (provide 0 if not, 1 if yes)
+                // Query to get the user's non null workout from the specified day
                 string query = $"SELECT {day} FROM LoginInfo WHERE Id = @id AND {day} IS NOT NULL";
 
                 // Sets up the connection to the local database and has the command query from that connection (handles closing)
@@ -51,6 +51,7 @@ namespace VPGui
                     // Puts the result of the query into variable
                     info = (string)command.ExecuteScalar();
                 }
+                // Makes day groupbox visible if there's a workout routine
                 if (!string.IsNullOrEmpty(info))
                 {
                     label1.Visible = false;
@@ -95,16 +96,20 @@ namespace VPGui
 
         private void buildSchedule(GroupBox gbox, string info)
         {
+            // Separates all workout names for that day
             string[] workouts = info.Split(',');
 
+            // Scales the groupboxes with how many workouts are listed
             int autosize = 70 + (30 * workouts.Length);
             gbox.Size = new Size(483,autosize);
 
+            // Title setup for the workouts
             createLabel(gbox, "Exercise", 20, 30, 15);
             createLabel(gbox, "Sets", 180, 30, 15);
             createLabel(gbox, "Reps", 250, 30, 15);
             createLabel(gbox, "Weight", 320, 30, 15);
 
+            // Builds and places the workouts on the groupbox
             int y = 60;
             foreach (string workout in workouts)
             {
@@ -122,7 +127,7 @@ namespace VPGui
 
         private int lookupDatabase(string column)
         {
-            // Query to check if username or password exists. (provide 0 if not, 1 if yes)
+            // Query to get data from the column specified
             string query = $"SELECT {column} FROM LoginInfo WHERE Id = @id";
 
             // Sets up the connection to the local database and has the command query from that connection (handles closing)
@@ -164,6 +169,11 @@ namespace VPGui
         }
 
         private void ScheduleForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void sundayGbx_Enter(object sender, EventArgs e)
         {
 
         }

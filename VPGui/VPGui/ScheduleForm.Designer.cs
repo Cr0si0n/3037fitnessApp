@@ -31,6 +31,7 @@
             this.WkClose = new System.Windows.Forms.Button();
             this.WkLabel1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.mondayGbx = new System.Windows.Forms.GroupBox();
             this.tuesdayGbx = new System.Windows.Forms.GroupBox();
@@ -39,7 +40,6 @@
             this.fridayGbx = new System.Windows.Forms.GroupBox();
             this.saturdayGbx = new System.Windows.Forms.GroupBox();
             this.sundayGbx = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -84,6 +84,17 @@
             this.panel1.TabIndex = 24;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.Control;
+            this.label1.Location = new System.Drawing.Point(102, 150);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(341, 27);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "You have not made a schedule yet";
+            // 
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.AutoScroll = true;
@@ -101,7 +112,7 @@
             // 
             // mondayGbx
             // 
-            this.mondayGbx.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mondayGbx.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mondayGbx.ForeColor = System.Drawing.SystemColors.Control;
             this.mondayGbx.Location = new System.Drawing.Point(3, 3);
             this.mondayGbx.Name = "mondayGbx";
@@ -113,7 +124,7 @@
             // 
             // tuesdayGbx
             // 
-            this.tuesdayGbx.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tuesdayGbx.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tuesdayGbx.ForeColor = System.Drawing.SystemColors.Control;
             this.tuesdayGbx.Location = new System.Drawing.Point(3, 230);
             this.tuesdayGbx.Name = "tuesdayGbx";
@@ -125,7 +136,7 @@
             // 
             // wednesdayGbx
             // 
-            this.wednesdayGbx.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.wednesdayGbx.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.wednesdayGbx.ForeColor = System.Drawing.SystemColors.Control;
             this.wednesdayGbx.Location = new System.Drawing.Point(3, 457);
             this.wednesdayGbx.Name = "wednesdayGbx";
@@ -137,7 +148,7 @@
             // 
             // thursdayGbx
             // 
-            this.thursdayGbx.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.thursdayGbx.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.thursdayGbx.ForeColor = System.Drawing.SystemColors.Control;
             this.thursdayGbx.Location = new System.Drawing.Point(3, 684);
             this.thursdayGbx.Name = "thursdayGbx";
@@ -149,7 +160,7 @@
             // 
             // fridayGbx
             // 
-            this.fridayGbx.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fridayGbx.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fridayGbx.ForeColor = System.Drawing.SystemColors.Control;
             this.fridayGbx.Location = new System.Drawing.Point(3, 911);
             this.fridayGbx.Name = "fridayGbx";
@@ -161,7 +172,7 @@
             // 
             // saturdayGbx
             // 
-            this.saturdayGbx.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.saturdayGbx.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.saturdayGbx.ForeColor = System.Drawing.SystemColors.Control;
             this.saturdayGbx.Location = new System.Drawing.Point(3, 1138);
             this.saturdayGbx.Name = "saturdayGbx";
@@ -173,7 +184,7 @@
             // 
             // sundayGbx
             // 
-            this.sundayGbx.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sundayGbx.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sundayGbx.ForeColor = System.Drawing.SystemColors.Control;
             this.sundayGbx.Location = new System.Drawing.Point(3, 1365);
             this.sundayGbx.Name = "sundayGbx";
@@ -182,17 +193,7 @@
             this.sundayGbx.TabStop = false;
             this.sundayGbx.Text = "Sunday";
             this.sundayGbx.Visible = false;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.Control;
-            this.label1.Location = new System.Drawing.Point(102, 150);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(341, 27);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "You have not made a schedule yet";
+            this.sundayGbx.Enter += new System.EventHandler(this.sundayGbx_Enter);
             // 
             // ScheduleForm
             // 

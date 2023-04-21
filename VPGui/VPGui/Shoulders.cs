@@ -495,8 +495,10 @@ namespace VPGui
 
             // Splits the textbox data by row
             string[] rawList = text.Text.Split(new string[] { "\r\n", "\r", "\n" }, StringSplitOptions.None);
-
+            // List of exercises (can't tell how many there could be)
             List<string> exerciseNames = new List<string>();
+            // List of arrays to add to the congrats messagebox
+            List<string[]> improvements = new List<string[]>();
 
             foreach (string data in rawList)
             {
@@ -520,6 +522,8 @@ namespace VPGui
 
                     // Just to get rid of the " lbs" fragment
                     string[] subData = workoutList[5].Split(' ');
+
+                    improvements = checkImprovement(improvements, workout + "_Wht", int.Parse(subData[0]));
                     callDatabase(workout + "_Wht", int.Parse(subData[0]));
                 }
             }
@@ -527,6 +531,15 @@ namespace VPGui
 
             // Tells the user that it has been saved
             MessageBox.Show("Workout(s) Successfully Saved!");
+
+            if (improvements.Count > 0)
+            {
+                string contents = "Congradulations on the Improvements!\n\n";
+                foreach (string[] data in improvements)
+                    contents += $"{data[0]}Weight: {data[1]} -> {data[2]}\n";
+
+                MessageBox.Show(contents);
+            }
         }
 
         public void callDatabase(string column, int value)
@@ -551,7 +564,7 @@ namespace VPGui
         public void saveSchedule(List<string> names, ComboBox combobox)
         {
             string totalNames = "";
-
+            // Formats the names of all the exercises to put into the database
             for (int i=0; i<names.Count; i++)
             {
                 if (totalNames == "")
@@ -575,6 +588,60 @@ namespace VPGui
                 // Gives comfirmation of updating
                 command.ExecuteNonQuery();
             }
+        }
+
+        public List<string[]> checkImprovement(List<string[]> improvements, string column, int weight)
+        {
+            int count = 0;
+            int last = -1;
+            // Query to check and see if there is a previous weight
+            string query = $"SELECT COUNT(1) FROM LoginInfo WHERE Id = @id AND {column} IS NOT NULL";
+
+            // Sets up the connection to the local database and has the command query from that connection (handles closing)
+            using (connection = new SqlConnection(conString))
+            using (SqlCommand command = new SqlCommand(query, connection))
+            {
+                connection.Open();
+                // Fills in the parameters needed for comparison
+                command.Parameters.AddWithValue("@id", userId);
+
+                // Puts the result of the query into variable
+                count = (int)command.ExecuteScalar();
+            }
+
+            // If there's a previous weight, get its value
+            if (count > 0)
+            {
+                // Query to get data from the column specified
+                query = $"SELECT {column} FROM LoginInfo WHERE Id = @id";
+
+                // Sets up the connection to the local database and has the command query from that connection (handles closing)
+                using (connection = new SqlConnection(conString))
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+                    connection.Open();
+                    // Fills in the parameters needed for comparison
+                    command.Parameters.AddWithValue("@id", userId);
+
+                    // Puts the result of the query into variable
+                    last = (int)command.ExecuteScalar();
+                }
+            }
+
+            if (last != -1 && weight > last)
+            {
+                // Converts column name back to regular name
+                string name = "";
+                string[] nameConvert = column.Split('_');
+                for (int i = 0; i < nameConvert.Length - 1; i++)
+                    name += nameConvert[i] + " ";
+
+                // Creates an array of improvement data and put into improvements
+                string[] data = {name,last.ToString(),weight.ToString()};
+                improvements.Add(data);
+            }
+
+            return improvements;
         }
 
         private void numericUpDown6_ValueChanged(object sender, EventArgs e)
