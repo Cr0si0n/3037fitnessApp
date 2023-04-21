@@ -106,11 +106,11 @@
     <Compile Include="LowerBack.Designer.cs">
       <DependentUpon>LowerBack.cs</DependentUpon>
     </Compile>
-    <Compile Include="StatsForm.cs">
+    <Compile Include="ScheduleForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="StatsForm.Designer.cs">
-      <DependentUpon>StatsForm.cs</DependentUpon>
+    <Compile Include="ScheduleForm.Designer.cs">
+      <DependentUpon>ScheduleForm.cs</DependentUpon>
     </Compile>
     <Compile Include="InfoDatabaseDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -161,8 +161,8 @@
     <EmbeddedResource Include="LowerBack.resx">
       <DependentUpon>LowerBack.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="StatsForm.resx">
-      <DependentUpon>StatsForm.cs</DependentUpon>
+    <EmbeddedResource Include="ScheduleForm.resx">
+      <DependentUpon>ScheduleForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="WelcomeWindow.resx">
       <DependentUpon>WelcomeWindow.cs</DependentUpon>

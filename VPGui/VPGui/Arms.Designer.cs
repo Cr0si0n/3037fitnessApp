@@ -58,6 +58,7 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.Sets = new System.Windows.Forms.TextBox();
             this.Weight = new System.Windows.Forms.TextBox();
@@ -125,7 +126,7 @@
             // button9
             // 
             this.button9.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button9.Location = new System.Drawing.Point(562, 287);
+            this.button9.Location = new System.Drawing.Point(562, 293);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(113, 21);
             this.button9.TabIndex = 16;
@@ -137,7 +138,7 @@
             // button8
             // 
             this.button8.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.Location = new System.Drawing.Point(562, 314);
+            this.button8.Location = new System.Drawing.Point(562, 320);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(113, 21);
             this.button8.TabIndex = 17;
@@ -215,7 +216,7 @@
             // button13
             // 
             this.button13.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button13.Location = new System.Drawing.Point(443, 287);
+            this.button13.Location = new System.Drawing.Point(443, 293);
             this.button13.Name = "button13";
             this.button13.Size = new System.Drawing.Size(113, 48);
             this.button13.TabIndex = 24;
@@ -376,6 +377,7 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(59)))), ((int)(((byte)(57)))));
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.comboBox1);
             this.panel1.Controls.Add(this.textBox2);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
@@ -414,6 +416,16 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(688, 357);
             this.panel1.TabIndex = 78;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(443, 264);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(113, 23);
+            this.comboBox1.TabIndex = 90;
+            this.comboBox1.Text = "Monday";
             // 
             // label5
             // 
@@ -525,5 +537,6 @@
         private System.Windows.Forms.TextBox Reps;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button button24;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }

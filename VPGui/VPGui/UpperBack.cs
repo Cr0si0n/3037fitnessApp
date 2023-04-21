@@ -23,6 +23,8 @@ namespace VPGui
             Reps.Hide();
             Weight.Hide();
             button18.Hide();
+
+            comboBox1.Items.AddRange(new string[] { "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday" });
         }
 
         private void button9_Click(object sender, EventArgs e)
@@ -65,6 +67,7 @@ namespace VPGui
             label3.Hide();
             textBox1.Hide();
             textBox2.Hide();
+            comboBox1.Hide();
             Button button = (Button)sender;
             buttonText = button.Text;
         }
@@ -99,6 +102,7 @@ namespace VPGui
             label3.Hide();
             textBox1.Hide();
             textBox2.Hide();
+            comboBox1.Hide();
             Button button = (Button)sender;
             buttonText = button.Text;
         }
@@ -133,6 +137,7 @@ namespace VPGui
             label3.Hide();
             textBox1.Hide();
             textBox2.Hide();
+            comboBox1.Hide();
             Button button = (Button)sender;
             buttonText = button.Text;
         }
@@ -167,6 +172,7 @@ namespace VPGui
             label3.Hide();
             textBox1.Hide();
             textBox2.Hide();
+            comboBox1.Hide();
             Button button = (Button)sender;
             buttonText = button.Text;
         }
@@ -201,6 +207,7 @@ namespace VPGui
             label3.Hide();
             textBox1.Hide();
             textBox2.Hide();
+            comboBox1.Hide();
             Button button = (Button)sender;
             buttonText = button.Text;
         }
@@ -235,6 +242,7 @@ namespace VPGui
             label3.Hide();
             textBox1.Hide();
             textBox2.Hide();
+            comboBox1.Hide();
             Button button = (Button)sender;
             buttonText = button.Text;
         }
@@ -269,6 +277,7 @@ namespace VPGui
             label3.Hide();
             textBox1.Hide();
             textBox2.Hide();
+            comboBox1.Hide();
             Button button = (Button)sender;
             buttonText = button.Text;
         }
@@ -342,6 +351,7 @@ namespace VPGui
             label3.Show();
             textBox1.Show();
             textBox2.Show();
+            comboBox1.Show();
             Reps.Clear();
             Sets.Clear();
             Weight.Clear();
@@ -350,7 +360,7 @@ namespace VPGui
         private void button13_Click(object sender, EventArgs e)
         {
             Shoulders sh = new Shoulders();
-            sh.workoutSaveButton(textBox1);
+            sh.workoutSaveButton(textBox1, comboBox1);
         }
     }
 }

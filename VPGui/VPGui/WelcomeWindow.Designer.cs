@@ -196,13 +196,14 @@
             // 
             // GrpButton
             // 
+            this.GrpButton.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.GrpButton.ForeColor = System.Drawing.Color.Black;
             this.GrpButton.Location = new System.Drawing.Point(27, 160);
             this.GrpButton.Margin = new System.Windows.Forms.Padding(2);
             this.GrpButton.Name = "GrpButton";
             this.GrpButton.Size = new System.Drawing.Size(104, 22);
             this.GrpButton.TabIndex = 15;
-            this.GrpButton.Text = "Weekly Stats";
+            this.GrpButton.Text = "Your Schedule";
             this.GrpButton.UseVisualStyleBackColor = true;
             this.GrpButton.Click += new System.EventHandler(this.GrpButton_Click);
             // 

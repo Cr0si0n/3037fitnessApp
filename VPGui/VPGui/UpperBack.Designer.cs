@@ -58,6 +58,7 @@
             this.Reps = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.button18 = new System.Windows.Forms.Button();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -75,7 +76,7 @@
             // button8
             // 
             this.button8.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.Location = new System.Drawing.Point(567, 296);
+            this.button8.Location = new System.Drawing.Point(568, 313);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(113, 21);
             this.button8.TabIndex = 18;
@@ -87,7 +88,7 @@
             // button9
             // 
             this.button9.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button9.Location = new System.Drawing.Point(567, 269);
+            this.button9.Location = new System.Drawing.Point(568, 286);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(113, 21);
             this.button9.TabIndex = 19;
@@ -176,7 +177,7 @@
             // button13
             // 
             this.button13.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button13.Location = new System.Drawing.Point(448, 269);
+            this.button13.Location = new System.Drawing.Point(449, 286);
             this.button13.Name = "button13";
             this.button13.Size = new System.Drawing.Size(113, 48);
             this.button13.TabIndex = 27;
@@ -293,7 +294,7 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(12, 264);
+            this.textBox2.Location = new System.Drawing.Point(13, 281);
             this.textBox2.Margin = new System.Windows.Forms.Padding(2);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
@@ -304,6 +305,7 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(59)))), ((int)(((byte)(57)))));
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.comboBox1);
             this.panel1.Controls.Add(this.textBox2);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
@@ -334,7 +336,7 @@
             this.panel1.Controls.Add(this.button18);
             this.panel1.Location = new System.Drawing.Point(20, 20);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(692, 339);
+            this.panel1.Size = new System.Drawing.Size(692, 349);
             this.panel1.TabIndex = 78;
             // 
             // label5
@@ -394,12 +396,22 @@
             this.button18.UseVisualStyleBackColor = true;
             this.button18.Click += new System.EventHandler(this.button18_Click);
             // 
+            // comboBox1
+            // 
+            this.comboBox1.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(449, 257);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(113, 23);
+            this.comboBox1.TabIndex = 96;
+            this.comboBox1.Text = "Monday";
+            // 
             // UpperBack
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(37)))), ((int)(((byte)(36)))));
-            this.ClientSize = new System.Drawing.Size(739, 379);
+            this.ClientSize = new System.Drawing.Size(739, 390);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "UpperBack";
@@ -441,5 +453,6 @@
         private System.Windows.Forms.TextBox Reps;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button button18;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }

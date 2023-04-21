@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.Common;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.IO;
@@ -28,6 +29,8 @@ namespace VPGui
             Reps.Hide();
             Weight.Hide();
             button22.Hide();
+
+            comboBox1.Items.AddRange(new string[] {"Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"});
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -64,6 +67,7 @@ namespace VPGui
             label3.Hide();
             textBox1.Hide();
             textBox2.Hide();
+            comboBox1.Hide();
             Button button = (Button)sender;
             buttonText = button.Text;
         }
@@ -137,6 +141,7 @@ namespace VPGui
             label3.Hide();
             textBox1.Hide();
             textBox2.Hide();
+            comboBox1.Hide();
             Button button = (Button)sender;
             buttonText = button.Text;
         }
@@ -175,6 +180,7 @@ namespace VPGui
             label3.Hide();
             textBox1.Hide();
             textBox2.Hide();
+            comboBox1.Hide();
             Button button = (Button)sender;
             buttonText = button.Text;
         }
@@ -213,6 +219,7 @@ namespace VPGui
             label3.Hide();
             textBox1.Hide();
             textBox2.Hide();
+            comboBox1.Hide();
             Button button = (Button)sender;
             buttonText = button.Text;
         }
@@ -251,6 +258,7 @@ namespace VPGui
             label3.Hide();
             textBox1.Hide();
             textBox2.Hide();
+            comboBox1.Hide();
             Button button = (Button)sender;
             buttonText = button.Text;
         }
@@ -289,6 +297,7 @@ namespace VPGui
             label3.Hide();
             textBox1.Hide();
             textBox2.Hide();
+            comboBox1.Hide();
             Button button = (Button)sender;
             buttonText = button.Text;
         }
@@ -327,6 +336,7 @@ namespace VPGui
             label3.Hide();
             textBox1.Hide();
             textBox2.Hide();
+            comboBox1.Hide();
             Button button = (Button)sender;
             buttonText = button.Text;
         }
@@ -365,6 +375,7 @@ namespace VPGui
             label3.Hide();
             textBox1.Hide();
             textBox2.Hide();
+            comboBox1.Hide();
             Button button = (Button)sender;
             buttonText = button.Text;
         }
@@ -403,6 +414,7 @@ namespace VPGui
             label3.Hide();
             textBox1.Hide();
             textBox2.Hide();
+            comboBox1.Hide();
             Button button = (Button)sender;
             buttonText = button.Text; 
         }
@@ -470,10 +482,10 @@ namespace VPGui
 
         private void button12_Click(object sender, EventArgs e)
         {
-            workoutSaveButton(textBox1);
+            workoutSaveButton(textBox1, comboBox1);
         }
 
-        public void workoutSaveButton(TextBox text)
+        public void workoutSaveButton(TextBox text, ComboBox combobox)
         {
             // A look at the list of the different variables at play
             //    rawList = textBox1.Text + buttonText + "\t\t" + Sets.Text + "   x   " + Reps.Text + "\t\t" + Weight.Text + " lbs" + "\r\n" + "\r\n";
@@ -484,6 +496,8 @@ namespace VPGui
             // Splits the textbox data by row
             string[] rawList = text.Text.Split(new string[] { "\r\n", "\r", "\n" }, StringSplitOptions.None);
 
+            List<string> exerciseNames = new List<string>();
+
             foreach (string data in rawList)
             {
                 // Splits the textbox row by words
@@ -492,6 +506,7 @@ namespace VPGui
                 // To prevent the spacer rows from giving error
                 if (workoutList[0] != "")
                 {
+                    exerciseNames.Add(workoutList[0]);
                     // For the one case where numbers are in the name
                     if (workoutList[0] == "30 sec Plank")
                         workoutList[0] = "Thirty sec Plank";
@@ -508,6 +523,8 @@ namespace VPGui
                     callDatabase(workout + "_Wht", int.Parse(subData[0]));
                 }
             }
+            saveSchedule(exerciseNames, combobox);
+
             // Tells the user that it has been saved
             MessageBox.Show("Workout(s) Successfully Saved!");
         }
@@ -524,6 +541,35 @@ namespace VPGui
                 connection.Open();
                 // Fills in the parameters needed for the command query
                 command.Parameters.AddWithValue("@value", value);
+                command.Parameters.AddWithValue("@id", userId);
+
+                // Gives comfirmation of updating
+                command.ExecuteNonQuery();
+            }
+        }
+
+        public void saveSchedule(List<string> names, ComboBox combobox)
+        {
+            string totalNames = "";
+
+            for (int i=0; i<names.Count; i++)
+            {
+                if (totalNames == "")
+                    totalNames += names[i];
+                else
+                    totalNames += "," + names[i];
+            }
+
+            // Query to update workout info of current user into LoginInfo (column is inserted directly because it doesn't like it otherwise)
+            string query = $"UPDATE LoginInfo SET {combobox.Text} = @value WHERE Id = @id";
+
+            // Sets up the connection to the local database and has the command query from that connection (handles closing)
+            using (connection = new SqlConnection(conString))
+            using (SqlCommand command = new SqlCommand(query, connection))
+            {
+                connection.Open();
+                // Fills in the parameters needed for the command query
+                command.Parameters.AddWithValue("@value", totalNames);
                 command.Parameters.AddWithValue("@id", userId);
 
                 // Gives comfirmation of updating
@@ -579,6 +625,7 @@ namespace VPGui
             label3.Show();
             textBox1.Show();
             textBox2.Show();
+            comboBox1.Show();
             Reps.Clear();
             Sets.Clear();
             Weight.Clear();

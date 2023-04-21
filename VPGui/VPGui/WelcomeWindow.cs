@@ -148,7 +148,7 @@ namespace VPGui
 
         private void GrpButton_Click(object sender, EventArgs e)
         {
-            StatsForm child = new StatsForm();
+            ScheduleForm child = new ScheduleForm();
             child.Show();
         }
 
