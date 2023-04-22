@@ -532,9 +532,10 @@ namespace VPGui
             // Tells the user that it has been saved
             MessageBox.Show("Workout(s) Successfully Saved!");
 
+            // Combines all of the improvements into one messagebox
             if (improvements.Count > 0)
             {
-                string contents = "Congradulations on the Improvements!\n\n";
+                string contents = "Congratulations on the Improvements!\n\n";
                 foreach (string[] data in improvements)
                     contents += $"{data[0]}Weight: {data[1]} -> {data[2]}\n";
 

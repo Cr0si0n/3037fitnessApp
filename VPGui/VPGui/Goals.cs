@@ -87,6 +87,13 @@ namespace VPGui
             callDatabase("Goals", goals);
             // Update the goal list
             buildGoalList();
+
+            // Reset info
+            comboBox1.Text = "Choose a Muscle Group";
+            comboBox2.Text = "Choose an Exercise";
+            SetsTxt.Text = "";
+            RepsTxt.Text = "";
+            WeightTxt.Text = "";
         }
 
         private string getPastGoals()
@@ -182,16 +189,51 @@ namespace VPGui
                     sh.createLabel(gbox, "  Sets:", 30, 30);
                     sh.createLabel(gbox, "  Reps:", 30, 60);
                     sh.createLabel(gbox, "Weight:", 30, 90);
-                    sh.createLabel(gbox, data[1], 150, 30);
-                    sh.createLabel(gbox, data[2], 150, 60);
-                    sh.createLabel(gbox, data[3], 150, 90);
+                    sh.createLabel(gbox, data[1], 100, 30);
+                    sh.createLabel(gbox, data[2], 100, 60);
+                    sh.createLabel(gbox, data[3], 100, 90);
                 }
             }
         }
 
         private void deleteBtn_Click(object sender, EventArgs e)
         {
+            // Delete goal specified
+            deleteGoal(comboBox2.Text);
+            // Update the goal list
+            buildGoalList();
 
+            // Reset info
+            comboBox1.Text = "Choose a Muscle Group";
+            comboBox2.Text = "Choose an Exercise";
+        }
+
+        public void deleteGoal(string workout)
+        {
+            string goals = "";
+            // Grab past goals
+            string past = getPastGoals();
+
+            // Checks if there are goals and the goal to delete exists
+            if (past != "" && past.Contains(workout))
+            {
+                string[] data = past.Split(':');
+                for (int i = 0; i < data.Length; i++)
+                {
+                    // If current is the goal to delete, skip it
+                    if (!data[i].Contains(workout))
+                    {
+                        // Put the spacer back
+                        if (i != 0)
+                            goals += ":";
+
+                        goals += data[i];
+                    }
+                }
+                goals = goals.Trim(':');
+            }
+            // Put updated goal list into the database
+            callDatabase("Goals", goals);
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
