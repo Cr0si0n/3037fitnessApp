@@ -122,6 +122,7 @@ namespace VPGui
             WkLogout.Hide();
             Wkbutton1.Hide();
             GrpButton.Hide();
+            button1.Hide();
         }
 
         private void ShowWorkoutSelect()
@@ -131,7 +132,7 @@ namespace VPGui
             WkLogout.Show();
             Wkbutton1.Show();
             GrpButton.Show();
-
+            button1.Show();
         }
 
         private void WkLogout_Click(object sender, EventArgs e)
@@ -175,6 +176,17 @@ namespace VPGui
         private void WkLabel2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Goals goals = new Goals();
+            goals.Show();
         }
     }//End VPGui
 

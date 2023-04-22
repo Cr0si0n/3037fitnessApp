@@ -154,3 +154,4 @@ C:\Users\antho\source\repos\fitnessApp\VPGui\VPGui\obj\Debug\VPGui.UpperBack.res
 C:\Users\antho\source\repos\fitnessApp\VPGui\VPGui\obj\Debug\VPGui.Legs.resources
 C:\Users\antho\source\repos\fitnessApp\VPGui\VPGui\obj\Debug\VPGui.Abs.resources
 C:\Users\xialo\OneDrive\Documents\1codeprojects\3037fitnessApp\VPGui\VPGui\obj\Debug\VPGui.ScheduleForm.resources
+C:\Users\xialo\OneDrive\Documents\1codeprojects\3037fitnessApp\VPGui\VPGui\obj\Debug\VPGui.Goals.resources

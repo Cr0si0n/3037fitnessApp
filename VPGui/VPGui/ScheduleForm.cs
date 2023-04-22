@@ -144,16 +144,17 @@ namespace VPGui
         }
 
 
-        private void createLabel(GroupBox gbox, string value, int x, int y, int font=12)
+        public void createLabel(GroupBox gbox, string value, int x, int y, int font=12)
         {
-            Label test = new Label();
+            // Creates new label for data
+            Label label = new Label();
 
-            test.Text = value;
-            test.Location = new Point(x, y);
-            test.AutoSize = true;
-            test.Font = new Font("Times New Roman", font);
-            test.ForeColor = Color.White;
-            gbox.Controls.Add(test);
+            label.Text = value;
+            label.Location = new Point(x, y);
+            label.AutoSize = true;
+            label.Font = new Font("Times New Roman", font);
+            label.ForeColor = Color.White;
+            gbox.Controls.Add(label);
         }
         
 
