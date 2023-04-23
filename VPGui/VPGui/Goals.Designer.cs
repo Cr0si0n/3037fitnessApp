@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.deleteBtn = new System.Windows.Forms.Button();
             this.saveBtn = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
@@ -41,7 +42,6 @@
             this.mondayGbx = new System.Windows.Forms.GroupBox();
             this.WkLabel1 = new System.Windows.Forms.Label();
             this.WkClose = new System.Windows.Forms.Button();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -67,6 +67,16 @@
             this.panel1.Size = new System.Drawing.Size(541, 443);
             this.panel1.TabIndex = 25;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(27, 99);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(146, 23);
+            this.comboBox2.TabIndex = 67;
+            this.comboBox2.Text = "Choose an Exercise";
             // 
             // deleteBtn
             // 
@@ -141,7 +151,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.Control;
-            this.label1.Location = new System.Drawing.Point(245, 175);
+            this.label1.Location = new System.Drawing.Point(250, 175);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(224, 27);
             this.label1.TabIndex = 0;
@@ -193,16 +203,6 @@
             this.WkClose.Text = "Close";
             this.WkClose.UseVisualStyleBackColor = true;
             this.WkClose.Click += new System.EventHandler(this.WkClose_Click);
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(27, 99);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(146, 23);
-            this.comboBox2.TabIndex = 67;
-            this.comboBox2.Text = "Choose an Exercise";
             // 
             // Goals
             // 

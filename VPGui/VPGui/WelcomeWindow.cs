@@ -22,6 +22,7 @@ namespace VPGui
         public VPGui()
         {
             InitializeComponent();
+            this.AcceptButton = UserAndPassEnterButton;
         }
 
         private void getId()

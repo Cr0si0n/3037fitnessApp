@@ -17,6 +17,7 @@ namespace VPGui
         public Arms()
         {
             InitializeComponent();
+            this.AcceptButton = button13;
             label4.Hide();
             label5.Hide();
             Sets.Hide();
@@ -39,6 +40,7 @@ namespace VPGui
 
         private void button1_Click(object sender, EventArgs e)
         {
+            this.AcceptButton = button24;
             label4.Show();
             label5.Show();
             Sets.Show();
@@ -80,6 +82,7 @@ namespace VPGui
 
         private void button2_Click(object sender, EventArgs e)
         {
+            this.AcceptButton = button24;
             label4.Show();
             label5.Show();
             Sets.Show();
@@ -121,6 +124,7 @@ namespace VPGui
 
         private void button3_Click(object sender, EventArgs e)
         {
+            this.AcceptButton = button24;
             label4.Show();
             label5.Show();
             Sets.Show();
@@ -162,6 +166,7 @@ namespace VPGui
 
         private void button4_Click(object sender, EventArgs e)
         {
+            this.AcceptButton = button24;
             label4.Show();
             label5.Show();
             Sets.Show();
@@ -203,6 +208,7 @@ namespace VPGui
 
         private void button5_Click(object sender, EventArgs e)
         {
+            this.AcceptButton = button24;
             label4.Show();
             label5.Show();
             Sets.Show();
@@ -244,6 +250,7 @@ namespace VPGui
 
         private void button6_Click(object sender, EventArgs e)
         {
+            this.AcceptButton = button24;
             label4.Show();
             label5.Show();
             Sets.Show();
@@ -285,6 +292,7 @@ namespace VPGui
 
         private void button7_Click(object sender, EventArgs e)
         {
+            this.AcceptButton = button24;
             label4.Show();
             label5.Show();
             Sets.Show();
@@ -326,6 +334,7 @@ namespace VPGui
 
         private void button10_Click(object sender, EventArgs e)
         {
+            this.AcceptButton = button24;
             label4.Show();
             label5.Show();
             Sets.Show();
@@ -367,6 +376,7 @@ namespace VPGui
 
         private void button11_Click(object sender, EventArgs e)
         {
+            this.AcceptButton = button24;
             label4.Show();
             label5.Show();
             Sets.Show();
@@ -408,6 +418,7 @@ namespace VPGui
 
         private void button12_Click(object sender, EventArgs e)
         {
+            this.AcceptButton = button24;
             label4.Show();
             label5.Show();
             Sets.Show();
@@ -495,7 +506,7 @@ namespace VPGui
         private void button18_Click(object sender, EventArgs e)
         {
             textBox2.Text = "Tricep pushups, also known as diamond pushups or triangle pushups, are a great bodyweight exercise you can do at " +
-                "               home to build lean muscle in your triceps, and increased strength as well.";
+                            "home to build lean muscle in your triceps, and increased strength as well.";
         }
 
         private void button24_Click(object sender, EventArgs e)
@@ -504,6 +515,7 @@ namespace VPGui
             textBox1.Text = textBox1.Text + buttonText + "\t\t"
                 + Sets.Text + "   x   " + Reps.Text +
                 "\t\t" + Weight.Text + " lbs" + "\r\n" + "\r\n";
+            this.AcceptButton = button13;
             label4.Hide();
             label5.Hide();
             Sets.Hide();

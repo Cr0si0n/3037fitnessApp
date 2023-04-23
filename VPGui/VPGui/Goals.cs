@@ -29,6 +29,7 @@ namespace VPGui
         public Goals()
         {
             InitializeComponent();
+            this.AcceptButton = saveBtn;
             comboBox1.Items.AddRange(new string[] {"Shoulders","Chest", "Arms", "Upper Back", "Legs", "Abs/Lower Back"});
             buildGoalList();
         }

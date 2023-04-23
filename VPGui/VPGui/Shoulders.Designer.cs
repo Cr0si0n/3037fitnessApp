@@ -56,13 +56,13 @@
             this.label3 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.Sets = new System.Windows.Forms.TextBox();
             this.Weight = new System.Windows.Forms.TextBox();
             this.Reps = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.button22 = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -91,7 +91,7 @@
             // button8
             // 
             this.button8.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.Location = new System.Drawing.Point(548, 293);
+            this.button8.Location = new System.Drawing.Point(547, 342);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(113, 22);
             this.button8.TabIndex = 8;
@@ -103,7 +103,7 @@
             // button9
             // 
             this.button9.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button9.Location = new System.Drawing.Point(548, 265);
+            this.button9.Location = new System.Drawing.Point(547, 314);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(113, 22);
             this.button9.TabIndex = 9;
@@ -203,7 +203,7 @@
             // button12
             // 
             this.button12.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button12.Location = new System.Drawing.Point(429, 265);
+            this.button12.Location = new System.Drawing.Point(428, 314);
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(113, 50);
             this.button12.TabIndex = 18;
@@ -344,11 +344,11 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(17, 321);
+            this.textBox2.Location = new System.Drawing.Point(13, 285);
             this.textBox2.Margin = new System.Windows.Forms.Padding(2);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(644, 76);
+            this.textBox2.Size = new System.Drawing.Size(410, 79);
             this.textBox2.TabIndex = 52;
             // 
             // panel1
@@ -390,8 +390,18 @@
             this.panel1.Controls.Add(this.button22);
             this.panel1.Location = new System.Drawing.Point(22, 24);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(673, 414);
+            this.panel1.Size = new System.Drawing.Size(673, 381);
             this.panel1.TabIndex = 53;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(428, 285);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(113, 23);
+            this.comboBox1.TabIndex = 59;
+            this.comboBox1.Text = "Monday";
             // 
             // label5
             // 
@@ -451,22 +461,12 @@
             this.button22.UseVisualStyleBackColor = true;
             this.button22.Click += new System.EventHandler(this.button22_Click);
             // 
-            // comboBox1
-            // 
-            this.comboBox1.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(325, 280);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(98, 23);
-            this.comboBox1.TabIndex = 59;
-            this.comboBox1.Text = "Monday";
-            // 
             // Shoulders
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(37)))), ((int)(((byte)(36)))));
-            this.ClientSize = new System.Drawing.Size(719, 461);
+            this.ClientSize = new System.Drawing.Size(719, 429);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Shoulders";

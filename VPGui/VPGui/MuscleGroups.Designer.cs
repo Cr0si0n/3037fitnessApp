@@ -37,7 +37,6 @@
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
@@ -45,10 +44,10 @@
             // 
             // button1
             // 
-            this.button1.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(27, 67);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(113, 21);
+            this.button1.Size = new System.Drawing.Size(113, 25);
             this.button1.TabIndex = 0;
             this.button1.Text = "Shoulders";
             this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
@@ -68,10 +67,10 @@
             // 
             // button2
             // 
-            this.button2.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.Location = new System.Drawing.Point(27, 112);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(113, 21);
+            this.button2.Size = new System.Drawing.Size(113, 25);
             this.button2.TabIndex = 2;
             this.button2.Text = "Chest";
             this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
@@ -80,10 +79,10 @@
             // 
             // button3
             // 
-            this.button3.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.Location = new System.Drawing.Point(27, 157);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(113, 21);
+            this.button3.Size = new System.Drawing.Size(113, 25);
             this.button3.TabIndex = 3;
             this.button3.Text = "Arms";
             this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
@@ -92,10 +91,10 @@
             // 
             // button4
             // 
-            this.button4.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.Location = new System.Drawing.Point(217, 67);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(113, 21);
+            this.button4.Size = new System.Drawing.Size(113, 25);
             this.button4.TabIndex = 4;
             this.button4.Text = "Upper Back";
             this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
@@ -104,10 +103,10 @@
             // 
             // button5
             // 
-            this.button5.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.Location = new System.Drawing.Point(217, 112);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(113, 21);
+            this.button5.Size = new System.Drawing.Size(113, 25);
             this.button5.TabIndex = 5;
             this.button5.Text = "Legs";
             this.button5.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
@@ -138,25 +137,12 @@
             this.button7.UseVisualStyleBackColor = true;
             this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
-            // button8
-            // 
-            this.button8.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.Location = new System.Drawing.Point(389, 220);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(113, 48);
-            this.button8.TabIndex = 8;
-            this.button8.Text = "Bodybuilding Stats";
-            this.button8.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
-            this.button8.UseMnemonic = false;
-            this.button8.UseVisualStyleBackColor = true;
-            this.button8.Click += new System.EventHandler(this.button8_Click);
-            // 
             // button9
             // 
-            this.button9.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button9.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button9.Location = new System.Drawing.Point(217, 157);
             this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(113, 21);
+            this.button9.Size = new System.Drawing.Size(113, 25);
             this.button9.TabIndex = 9;
             this.button9.Text = "Abs/ Lower Back";
             this.button9.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
@@ -168,7 +154,6 @@
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(59)))), ((int)(((byte)(57)))));
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.button9);
-            this.panel1.Controls.Add(this.button8);
             this.panel1.Controls.Add(this.button7);
             this.panel1.Controls.Add(this.button6);
             this.panel1.Controls.Add(this.button5);
@@ -209,7 +194,6 @@
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Panel panel1;
     }

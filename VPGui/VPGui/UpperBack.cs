@@ -17,6 +17,7 @@ namespace VPGui
         public UpperBack()
         {
             InitializeComponent();
+            this.AcceptButton = button13;
             label4.Hide();
             label5.Hide();
             Sets.Hide();
@@ -39,6 +40,7 @@ namespace VPGui
 
         private void button1_Click(object sender, EventArgs e)
         {
+            this.AcceptButton = button18;
             label4.Show();
             label5.Show();
             Sets.Show();
@@ -74,6 +76,7 @@ namespace VPGui
 
         private void button3_Click(object sender, EventArgs e)
         {
+            this.AcceptButton = button18;
             label4.Show();
             label5.Show();
             Sets.Show();
@@ -109,6 +112,7 @@ namespace VPGui
 
         private void button4_Click(object sender, EventArgs e)
         {
+            this.AcceptButton = button18;
             label4.Show();
             label5.Show();
             Sets.Show();
@@ -144,6 +148,7 @@ namespace VPGui
 
         private void button5_Click(object sender, EventArgs e)
         {
+            this.AcceptButton = button18;
             label4.Show();
             label5.Show();
             Sets.Show();
@@ -179,6 +184,7 @@ namespace VPGui
 
         private void button2_Click(object sender, EventArgs e)
         {
+            this.AcceptButton = button18;
             label4.Show();
             label5.Show();
             Sets.Show();
@@ -214,6 +220,7 @@ namespace VPGui
 
         private void button6_Click(object sender, EventArgs e)
         {
+            this.AcceptButton = button18;
             label4.Show();
             label5.Show();
             Sets.Show();
@@ -249,6 +256,7 @@ namespace VPGui
 
         private void button7_Click(object sender, EventArgs e)
         {
+            this.AcceptButton = button18;
             label4.Show();
             label5.Show();
             Sets.Show();
@@ -323,6 +331,7 @@ namespace VPGui
             textBox1.Text = textBox1.Text + buttonText + "\t\t"
                 + Sets.Text + "   x   " + Reps.Text +
                 "\t\t" + Weight.Text + " lbs" + "\r\n" + "\r\n";
+            this.AcceptButton = button13;
             label4.Hide();
             label5.Hide();
             Sets.Hide();

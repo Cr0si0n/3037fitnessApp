@@ -21,6 +21,7 @@ namespace VPGui
         public NewUserForm()
         {
             InitializeComponent();
+            this.AcceptButton = NewUserAndPassEnter;
         }
 
         private void NewUserForm_Load(object sender, EventArgs e)
